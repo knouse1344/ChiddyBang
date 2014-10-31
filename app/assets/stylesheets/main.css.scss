@@ -24,4 +24,16 @@
 		display: inline-block;
 		vertical-align: bottom;
 	}
+
+	.content {
+		padding-top: 50px;
+		text-align: center;
+		height: 100%;
+
+		.content-img {
+			width: 500px;
+			margin: auto;
+			margin-top: 80px;
+		}
+	}
 }
