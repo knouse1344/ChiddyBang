@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   get 'main/index'
+  get 'main/home_1'
+  get 'main/home_2'
+  get 'main/home_3'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,3 +1,27 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#index {
+	height: 100%;
+	white-space: nowrap;
+
+	.nav-container {
+		position: absolute;
+		top: 20px;
+		left: 350px;
+	}
+
+	.helper {
+	    display: inline-block;
+	    height: 100%;
+	    vertical-align: middle;
+	}
+
+	.home-img {
+		width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+}
