@@ -21,6 +21,18 @@
   display: inline-block;
   vertical-align: bottom;
 }
+/* line 28, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#index .content {
+  padding-top: 50px;
+  text-align: center;
+  height: 100%;
+}
+/* line 33, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#index .content .content-img {
+  width: 500px;
+  margin: auto;
+  margin-top: 80px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
