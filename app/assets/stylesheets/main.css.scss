@@ -25,6 +25,32 @@
 		vertical-align: bottom;
 	}
 
+	.home-img-cut {
+		width: 100%;
+		display: inline-block;
+		position: absolute;
+		bottom: 0;
+		/*vertical-align: bottom;*/
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.home-img-chiddy {
+		width: 250px;
+		display: inline-block;
+		/*vertical-align: bottom;*/
+		position: absolute;
+		bottom: -200px;
+		right: 10%;
+		z-index: 5;
+
+		img {
+			width: 100%;
+		}
+	}
+
 	.content {
 		padding-top: 50px;
 		text-align: center;
