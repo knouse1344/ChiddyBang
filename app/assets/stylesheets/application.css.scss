@@ -28,5 +28,50 @@ body {
 }
 
 p, span, em, h1, h2, h3, h4, h5 {
-	color: #fff !important;
+	color: #fff;
 } 
+
+@font-face {
+  font-family: 'Bangers';
+  src: url('/assets/fonts/Bangers.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#header-logo {
+	padding-top: 150px;
+	padding-bottom: 80px;
+	text-align: center;
+	position: relative;
+	width: 693px;
+	margin: auto;
+
+	.spark-top {
+		position: absolute;
+		top: 21px;
+		left: 40px;
+		z-index: 10;
+		visibility: hidden;
+	}
+
+	.spark-corner {
+		position: absolute;
+		right: -123px;
+		top: 54px;
+		visibility: hidden;
+	}
+
+	.chiddy {
+		width: 100%;
+		max-width: 910px;
+		position: relative;
+		z-index: 1;
+		margin: auto;
+		visibility: hidden;
+	}
+
+	.bang {
+		width: 303px;
+		visibility: hidden;
+	}
+}

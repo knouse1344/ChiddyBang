@@ -9,8 +9,8 @@
 		</div>
 	</div>
 <!-- 	<span class="helper"></span> -->
-	<div class="home-img-chiddy" data-stellar-ratio="1.5"><img src="/assets/home_img_chiddy.jpg" /></div>
-	<div class="home-img-cut" data-stellar-ratio=".5"><img src="/assets/home_img_cut.jpg" /></div>
+	<div class="home-img-chiddy" data-stellar-ratio="1.5"> </div>
+	<div class="home-img-cut" data-stellar-ratio="1"> </div>
 </div>
 <div id="index">
 	<div id="content1" class="container content">
@@ -34,13 +34,13 @@
 		           if (target.length) {
 		             $('html,body').animate({
 		                 scrollTop: target.offset().top
-		            }, 1000);
+		            }, 750);
 		            return false;
 		        }
 		    }
 		});
 
-		$.stellar({
+		$(window).stellar({
 
 		});
 	});
