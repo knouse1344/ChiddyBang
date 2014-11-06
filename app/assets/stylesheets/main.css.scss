@@ -63,23 +63,46 @@
 	}
 
 	#links {
-
+		text-align: center;
+		
 		.nav-link {
 			text-decoration: none;
 			font-family: 'Bangers';
+			color: #FFA300;
+			font-size: 34px;
+			margin: 0 40px;
 
 			span {
 				color: #FFA300;
-				font-size: 24px;
-				font-family: 'Bangers';
 			}
 
 			.fuse {
 				height: 5px;
-				width: 50px;
+				width: 100px;
 				background: #FFA300;
 				display: inline-block;
-				margin-bottom: 5px;
+				margin-bottom: 9px;
+				margin-left: 10px;
+				z-index: 5;
+				position: relative;
+			}
+
+			.spark-flicker {
+				visibility: hidden;
+				position: relative;
+				z-index: 1;
+				top: -2px;
+				margin-left: -58px;
+			}
+		}
+
+		.nav-link:hover {
+			.spark-flicker {
+				visibility: visible;
+			}
+
+			.fuse {
+				visibility: visible;
 			}
 		}
 	}
