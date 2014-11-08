@@ -3,16 +3,31 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-#index {
+.section {
 	height: 100%;
 	white-space: nowrap;
 	position: relative;
 
-	.nav-container {
-		position: absolute;
-		top: 20px;
-		left: 350px;
+	h1 {
+		color: #fff;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
 	}
+}
+
+.content {
+	padding-top: 50px;
+	text-align: center;
+	height: 100%;
+
+	.content-img {
+		width: 100%;
+		margin: auto;
+		margin-top: 80px;
+	}
+}
+
+#index {
 
 	.helper {
 	    display: inline-block;
@@ -34,7 +49,8 @@
 		bottom: 0;
 		/*vertical-align: bottom;*/
 		background: url("/assets/home_img_cut.jpg") no-repeat;
-		background-size: cover;
+		background-size: contain;
+		background-position: bottom left;
 	}
 
 	.home-img-chiddy {
@@ -49,61 +65,69 @@
 		background: url("/assets/home_img_chiddy.jpg") no-repeat;
 		background-size: cover;
 	}
+}
 
-	.content {
-		padding-top: 50px;
-		text-align: center;
-		height: 100%;
+.nav-container {
+	position: absolute;
+	top: 20px;
+	left: 350px;
 
-		.content-img {
-			width: 500px;
-			margin: auto;
-			margin-top: 80px;
+	a {
+		display: inline-block;
+		padding: 10px 15px;
+	}
+}
+
+
+
+
+
+
+/*  /////////////  VERSION 2 //////////// */
+/*  ///////////////////////////////////// */
+
+
+#links {
+	text-align: center;
+	
+	.nav-link {
+		text-decoration: none;
+		font-family: 'Bangers';
+		color: #FFA300;
+		font-size: 34px;
+		margin: 0 40px;
+
+		span {
+			color: #FFA300;
+		}
+
+		.fuse {
+			height: 5px;
+			width: 100px;
+			background: #FFA300;
+			display: inline-block;
+			margin-bottom: 9px;
+			margin-left: 10px;
+			z-index: 5;
+			position: relative;
+		}
+
+		.spark-flicker {
+			visibility: hidden;
+			position: relative;
+			z-index: 1;
+			top: -2px;
+			margin-left: -58px;
 		}
 	}
 
-	#links {
-		text-align: center;
-		
-		.nav-link {
-			text-decoration: none;
-			font-family: 'Bangers';
-			color: #FFA300;
-			font-size: 34px;
-			margin: 0 40px;
-
-			span {
-				color: #FFA300;
-			}
-
-			.fuse {
-				height: 5px;
-				width: 100px;
-				background: #FFA300;
-				display: inline-block;
-				margin-bottom: 9px;
-				margin-left: 10px;
-				z-index: 5;
-				position: relative;
-			}
-
-			.spark-flicker {
-				visibility: hidden;
-				position: relative;
-				z-index: 1;
-				top: -2px;
-				margin-left: -58px;
-			}
+	.nav-link:hover {
+		.spark-flicker {
+			visibility: visible;
 		}
 
-		.nav-link:hover {
-			.spark-flicker {
-				visibility: visible;
-			}
-
-			.fuse {
-				visibility: visible;
-			}
+		.fuse {
+			visibility: visible;
 		}
 	}
 }
