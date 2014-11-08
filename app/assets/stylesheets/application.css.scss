@@ -36,35 +36,37 @@ p, span, em, h1, h2, h3, h4, h5 {
 	padding-bottom: 80px;
 	text-align: center;
 	position: relative;
-	width: 693px;
+	width: 800px;
 	margin: auto;
 
 	.spark-top {
 		position: absolute;
-		top: 21px;
-		left: 40px;
+		top: 45px;
+		left: 75px;
 		z-index: 10;
 		visibility: hidden;
 	}
 
 	.spark-corner {
 		position: absolute;
-		right: -123px;
-		top: 54px;
+		right: -115px;
+		top: 60px;
+		z-index: 10;
 		visibility: hidden;
 	}
 
 	.chiddy {
-		width: 100%;
 		max-width: 910px;
+		width: 423px;
+		float: left;
 		position: relative;
 		z-index: 1;
-		margin: auto;
 		visibility: hidden;
 	}
 
 	.bang {
-		width: 303px;
 		visibility: hidden;
+		float: right;
+		width: 375px;
 	}
 }

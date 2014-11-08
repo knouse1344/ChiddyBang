@@ -149,6 +149,8 @@ setTimeout(function () {
     flicker_spark("#spark", 3, function () {
         $("#spark").fadeIn("fast");
     })
+
+    infinite_timer('#spark');
 }, 1000)
 
 setTimeout(function () {

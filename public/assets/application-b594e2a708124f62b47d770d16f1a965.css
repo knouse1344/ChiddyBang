@@ -1,0 +1,276 @@
+/* line 6, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.section {
+  min-height: 100%;
+  white-space: nowrap;
+  position: relative;
+}
+/* line 11, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.section h1 {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+/* line 21, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.content {
+  padding-top: 50px;
+  text-align: center;
+  height: 100%;
+}
+/* line 26, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.content .content-img {
+  width: 100%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+/* line 33, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.nav-container {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  padding-top: 15px;
+  background: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  position: relative;
+}
+/* line 42, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.nav-container a {
+  display: inline-block;
+  padding: 10px 15px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 51, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.nav-container a .fa {
+  margin-left: 10px;
+}
+/* line 56, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.nav-container .crown {
+  position: absolute;
+  left: 50%;
+  margin-left: -37px;
+  padding: 0 0 0 0;
+}
+/* line 63, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+.nav-container .spacer {
+  width: 120px;
+  height: 30px;
+  display: inline-block;
+}
+
+/* line 74, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#index .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+/* line 80, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#index .home-img {
+  width: 100%;
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* line 86, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#index .home-img-cut {
+  width: 100%;
+  height: 80%;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  /*vertical-align: bottom;*/
+  background: url("/assets/home_img_bg.png") no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+}
+/* line 98, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#index .home-img-chiddy {
+  width: 30%;
+  left: 60%;
+  height: 700px;
+  display: inline-block;
+  /*vertical-align: bottom;*/
+  position: absolute;
+  bottom: -200px;
+  z-index: 5;
+  background: url("/assets/home_img_chiddy.png") no-repeat;
+  background-size: contain;
+}
+
+/* line 114, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#music iframe {
+  margin-top: 80px;
+}
+
+/* line 119, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows {
+  padding: 0 0 80px 0;
+}
+/* line 121, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows .shows-bg {
+  width: 100%;
+}
+/* line 125, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows .shows-bg::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .2;
+  background-attachment: fixed;
+  background-image: url("/assets/home_image_v2.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+/* line 140, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows table#tour {
+  color: #fff;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+/* line 146, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows table#tour tr {
+  background: rgba(255, 255, 255, 0.05);
+}
+/* line 148, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows table#tour tr td {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+/* line 153, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows table#tour tr:nth-child(2n) {
+  background: rgba(255, 255, 255, 0.1);
+}
+/* line 157, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#shows table#tour tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/*  /////////////  VERSION 2 //////////// */
+/*  ///////////////////////////////////// */
+/* line 173, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#links {
+  text-align: center;
+}
+/* line 176, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#links .nav-link {
+  text-decoration: none;
+  font-family: 'Bangers';
+  color: #FFA300;
+  font-size: 34px;
+  margin: 0 40px;
+}
+/* line 183, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#links .nav-link span {
+  color: #FFA300;
+}
+/* line 187, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#links .nav-link .fuse {
+  height: 5px;
+  width: 100px;
+  background: #FFA300;
+  display: inline-block;
+  margin-bottom: 9px;
+  margin-left: 10px;
+  z-index: 5;
+  position: relative;
+}
+/* line 198, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#links .nav-link .spark-flicker {
+  visibility: hidden;
+  position: relative;
+  z-index: 1;
+  top: -2px;
+  margin-left: -58px;
+}
+/* line 208, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#links .nav-link:hover .spark-flicker {
+  visibility: visible;
+}
+/* line 212, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
+#links .nav-link:hover .fuse {
+  visibility: visible;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+/* line 19, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 26, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+body {
+  background: #000 !important;
+  position: relative;
+}
+
+/* line 31, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+p, span, em, h1, h2, h3, h4, h5 {
+  color: #fff;
+}
+
+/* line 35, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+#header-logo {
+  padding-top: 150px;
+  padding-bottom: 80px;
+  text-align: center;
+  position: relative;
+  width: 800px;
+  margin: auto;
+}
+/* line 43, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+#header-logo .spark-top {
+  position: absolute;
+  top: 45px;
+  left: 75px;
+  z-index: 10;
+  visibility: hidden;
+}
+/* line 51, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+#header-logo .spark-corner {
+  position: absolute;
+  right: -115px;
+  top: 60px;
+  z-index: 10;
+  visibility: hidden;
+}
+/* line 59, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+#header-logo .chiddy {
+  max-width: 910px;
+  width: 423px;
+  float: left;
+  position: relative;
+  z-index: 1;
+  visibility: hidden;
+}
+/* line 68, /home/bryan/Documents/chiddybang/app/assets/stylesheets/application.css.scss */
+#header-logo .bang {
+  visibility: hidden;
+  float: right;
+  width: 375px;
+}
