@@ -112,9 +112,88 @@
 }
 
 #music {
+	padding-bottom: 80px;
+
+	h2 {
+		border-bottom: 1px solid rgba(255,255,255,.2);
+		text-align: left;
+		color: #eee;
+		font-size: 24px;
+		padding-bottom:5px;
+		font-family: "Open Sans", sans-serif;
+		font-weight: 300;
+	}
 
 	iframe {
-		margin-top: 80px;
+		margin-top: 30px;
+		margin-bottom: 120px;
+	}
+	
+	.album-row {
+		padding: 25px 0;
+
+		.album {
+			position: relative;
+
+			.hover-info {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top:0;
+				left:0;
+				opacity: 0;
+				background: rgba(0,0,0,0.85);
+				z-index: 1;
+				padding: 40px;
+				font-family: "Open Sans", sans-serif;
+				-webkit-transition: all ease-in-out .15s;
+			    -moz-transition: all ease-in-out .15s;
+			    -o-transition: all ease-in-out .15s;
+			    transition: all ease-in-out .15s;
+
+			    h3 {
+			    	font-size: 38px;
+			    	font-weight: 300;
+			    	color: #fff;
+			    	text-align: left;
+			    	padding-top: 20px;
+			    	-webkit-transition: all ease-in-out .15s;
+				    -moz-transition: all ease-in-out .15s;
+				    -o-transition: all ease-in-out .15s;
+				    transition: all ease-in-out .15s;
+			    }
+
+			    p {
+			    	color: #ddd;
+			    	text-align: left;
+			    	padding-top: 40px;
+			    	-webkit-transition: all ease-in-out .25s;
+				    -moz-transition: all ease-in-out .25s;
+				    -o-transition: all ease-in-out .25s;
+				    transition: all ease-in-out .25s;
+			    }
+			}
+
+			img {
+				margin: auto;
+				width: 100%;
+			}
+		}
+
+		.album:hover {
+
+			.hover-info {
+				opacity: 1;
+
+				h3 {
+					padding-top: 0;
+				}
+
+				p {
+					padding-top: 0;
+				}
+			}
+		}
 	}
 }
 
@@ -181,6 +260,7 @@
 
 #about {
 
+	
 
 }
 
