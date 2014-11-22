@@ -52,7 +52,7 @@ border-top: 4px solid #fff;*/
 /* line 53, /home/bryan/Documents/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-container a {
   display: inline-block;
-  padding: 10px 15px 10px 5px;
+  padding: 10px 15px 10px 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   font-size: 14px;
