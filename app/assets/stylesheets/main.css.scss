@@ -51,18 +51,19 @@
 		display: inline-block;
 		width: 100%;
 		height: 50px;
-		background: rgba(0,0,0,.75);
+		background: rgba(0,0,0,.35);
 		text-align: center;
 		position: relative;
 
 		h1 {
 			position: absolute;
 			left: -25%;
+			font-family: 'Raleway', sans-serif;
 			display: inline-block;
-			font-weight: 300;
+			font-weight: 200;
 			margin-top: 0;
-			color: rgba(255,255,255,.5);
-			letter-spacing: -2px;
+			color: rgba(255,255,255,.45);
+			letter-spacing: 0px;
 			line-height: 50px;
 			-webkit-transition: all ease-in-out .15s;
 		    -moz-transition: all ease-in-out .15s;
@@ -86,12 +87,15 @@
 		    	text-align: left;
 
 		    	li {
-		    		font-family: 'Open Sans', sans-serif;
-		    		font-weight: 300;
-		    		font-size: 1.5em;
-		    		line-height: 2.5em;
-		    		text-transform: uppercase;
-		    		color: rgba(255,255,255,.3);
+
+		    		a {
+			    		font-family: 'Open Sans', sans-serif;
+			    		font-weight: 300;
+			    		font-size: 1.5em;
+			    		line-height: 2.5em;
+			    		text-transform: uppercase;
+			    		color: rgba(255,255,255,.3);
+			    	}
 		    	}
 		    }
 		}
@@ -146,6 +150,7 @@
 
 .nav-fixed {
 	position: fixed;
+	height: 50px;
 	top: 0;
 	left: 0;
 
@@ -171,8 +176,14 @@
 	}
 
 	.home-img {
-		margin-top: 50px;
+		position: absolute;
+		top:0;
+		left:0;
+		height:100%;
 		width: 100%;
+		background: url('/assets/home_bg.jpg') no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 
 	.home-img-cut {
@@ -203,6 +214,7 @@
 
 #music {
 	padding-bottom: 80px;
+	background: url('/assets/page_bg_grid.png') repeat;
 
 	h2 {
 		text-align: center;
@@ -218,6 +230,42 @@
 		margin-bottom: 120px;
 	}
 	
+	.news {
+		padding: 8em 0;
+		height: 60em;
+
+		.news-row {
+			padding-top: 3em;
+			padding-bottom: 3em;
+		}
+
+		.news-box {
+			border-bottom: 2px solid rgba(150,150,150,.5);
+
+			.news-title {
+				text-align: left;
+				padding: 1em 0;
+				border-top: 2px solid rgba(255,255,255,.75);
+
+				h2 {
+					text-align: left;
+				}
+
+			}
+
+			.news-content {
+				
+				p {
+					padding: 0 0 2em 0;
+					color: #aaa;
+					font-size: 1.1em;
+					line-height: 1.6em;
+					white-space: normal;
+				}
+			}
+		}
+	}
+
 	.album-row {
 		padding: 25px 0;
 
@@ -283,6 +331,13 @@
 				}
 			}
 		}
+	}
+
+	.music-bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
 	}
 }
 
