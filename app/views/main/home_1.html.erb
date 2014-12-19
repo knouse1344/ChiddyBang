@@ -1,18 +1,35 @@
 <div id="index" class="section">
-	<div class="navbar-fixed-top">
+	<div class="nav-bottom">
 		<div class="nav-container">
-
-			<a class="crown" href="#index"><img width="74" src="/assets/crown.png" /></a>
+			<h1>Chiddy Bang</h1>
+			<div class="slide-in">
+				<ul>
+					<li>News</li>
+					<li>Shows</li>
+					<li>Shop</li>
+					<li>About</li>
+				</ul>
+			</div>
+			<a class="crown" href="#index"><img width="50" src="/assets/crown.png" /></a>
 			<a href="/main/index">Index<i class="fa fa-chevron-down"></i></a>
 			<a href="#music">Music<i style="margin-right: 0;" class="fa fa-chevron-down"></i></a>
 			<div class="spacer"></div>
 			<a href="#shows">Shows<i class="fa fa-chevron-down"></i></a>
 			<a href="#about">About<i class="fa fa-chevron-down"></i></a>
+			<div class="social-icons">
+				<i class="fa fa-facebook"></i>
+				<i class="fa fa-twitter"></i>
+				<i class="fa fa-instagram"></i>
+				<i class="fa fa-pinterest"></i>
+			</div>
 		</div>
 	</div>
-<!-- 	<span class="helper"></span> -->
+
+<!-- <span class="helper"></span>
 	<div class="home-img-chiddy" data-stellar-ratio="1.5"> </div>
-	<div class="home-img-cut" data-stellar-ratio="1"> </div>
+	<div class="home-img-cut" data-stellar-ratio="1"> </div> -->
+
+	<img class="home-img" src="/assets/home_bg.jpg" />
 </div>
 
 <div id="music" class="section">
@@ -348,6 +365,9 @@
 
 <script>
 	$(document).ready(function() {
+		var navi = ('.nav-bottom');
+		var slidein = ('.slide-in');
+
 		$('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
 		        || location.hostname == this.hostname) {
@@ -363,7 +383,12 @@
 		    }
 		});
 
-		$(window).stellar({
+		$(navi).waypoint(function(direction) {
+			if (direction == 'down') {
+		  		$(this).addClass('nav-fixed');
+		  	} else {
+		  		$(this).removeClass('nav-fixed');
+		  	}
 
 		});
 	});
