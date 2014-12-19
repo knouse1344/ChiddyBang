@@ -1,16 +1,19 @@
 <div id="index" class="section">
+	<div class="nav-fixed-top">
+		<a class="crown" href="#music"><img width="50" src="/assets/crown.png" /></a>
+	</div>
 	<div class="nav-bottom">
 		<div class="nav-container">
 			<h1>Chiddy Bang</h1>
 			<div class="slide-in">
 				<ul>
-					<li><a href="/main/#music">News</a></li>
-					<li><a href="/main/#shows">Shows</a></li>
-					<li><a href="#">Shop</a></li>
-					<li><a href="/main/#about">About</a></li>
+					<li class="nav-music"><a href="/main/#music">News</a></li>
+					<li class="nav-shows"><a href="/main/#shows">Shows</a></li>
+					<li class="nav-shop"><a href="#">Shop</a></li>
+					<li class="nav-about"><a href="/main/#about">About</a></li>
 				</ul>
 			</div>
-			<a class="crown" href="#music"><img width="50" src="/assets/crown.png" /></a><!-- 
+			<!-- 
 			<a href="/main/index">Index<i class="fa fa-chevron-down"></i></a>
 			<a href="#music">Music<i style="margin-right: 0;" class="fa fa-chevron-down"></i></a> -->
 			<div class="spacer"></div><!-- 
@@ -28,7 +31,7 @@
 <!-- <span class="helper"></span>
 	<div class="home-img-chiddy" data-stellar-ratio="1.5"> </div>
 	<div class="home-img-cut" data-stellar-ratio="1"> </div> -->
-
+	<a class="index-continue" href="#music"><i class="fa fa-chevron-down"></i></a>
 	<div class="home-img"></div>
 </div>
 
@@ -145,18 +148,14 @@
 				</div>
 			</div>
 		</div>
-	</div>	<img class="music-bg" src="/assets/page_bg_airysmoke.jpg" />
+	</div>	
+	<img class="music-bg" src="/assets/page_bg_airysmoke.jpg" />
+	<img class="music-smoke" src="/assets/page_bg_smoke.png" />
 </div>
 
 <div id="shows" class="section">
 	<div class="shows-bg">
 		<div class="container content">
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="bar"></div>
-					<h1>Shows</h1>
-				</div>
-			</div>
 			<div class="row">
 				<div class="col-sm-12">
 					<table id="tour" class="table table-hover">
@@ -421,6 +420,13 @@
 	$(document).ready(function() {
 		var navi = ('.nav-bottom');
 		var slidein = ('.slide-in');
+		var music = ("#music");
+		var navmusic = (".nav-music");
+		var shows = ("#shows");
+		var navshows = ('.nav-shows');
+		var about = ("#about");
+		var navabout = (".nav-about");
+		var navli = ("#index .nav-container .slide-in ul li");
 
 		$('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -443,11 +449,38 @@
 		  	} else {
 		  		$(this).removeClass('nav-fixed');
 		  	}
-
 		});
 
+		$(music).waypoint(function(direction) {
+			if (direction == 'down') {
+				$(navli).removeClass('active');
+				$(navmusic).addClass('active');
+			} else {
+				$(navmusic).removeClass('active')
+			}
+		})
+		$(shows).waypoint(function(direction) {
+			if (direction == 'down') {
+				$(navli).removeClass('active');
+				$(navshows).addClass('active');
+			} else {
+				$(navshows).removeClass('active')
+				$(navmusic).addClass('active');
+			}
+		})
+		$(about).waypoint(function(direction) {
+			if (direction == 'down') {
+				$(navli).removeClass('active');
+				$(navabout).addClass('active');
+			} else {
+				$(navabout).removeClass('active')
+				$(navshows).addClass('active');
+			}
+		})
+
 		$(".news").mCustomScrollbar({
-			theme:"light-3"
+			theme:"light-3",
+			scrollInertia: 150
 		});
 
 	});

@@ -41,11 +41,20 @@
 	}
 }
 
+.crown {
+	position: fixed;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: .5em;
+	padding: 0 0 0 0;
+	z-index: 100;
+}
+
 .nav-bottom {
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	z-index: 9999;
+	z-index: 99;
 
 	.nav-container {
 		display: inline-block;
@@ -57,7 +66,7 @@
 
 		h1 {
 			position: absolute;
-			left: -25%;
+			left: 3%;
 			font-family: 'Raleway', sans-serif;
 			display: inline-block;
 			font-weight: 200;
@@ -95,7 +104,19 @@
 			    		line-height: 2.5em;
 			    		text-transform: uppercase;
 			    		color: rgba(255,255,255,.3);
+			    		text-decoration: none;
+			    		-webkit-transition: all ease-in-out .15s;
+					    -moz-transition: all ease-in-out .15s;
+					    -o-transition: all ease-in-out .15s;
+					    transition: all ease-in-out .15s;
 			    	}
+		    	}
+
+		    	li.active {
+
+		    		a {
+		    			color: rgba(255,255,255,1);
+		    		}
 		    	}
 		    }
 		}
@@ -114,13 +135,6 @@
 			.fa {
 				margin-left: 10px;
 			}
-		}
-
-		.crown {
-			position: absolute;
-			left: 50%;
-			margin-left: -25px;
-			padding: 0 0 0 0;
 		}
 
 		.spacer {
@@ -196,6 +210,24 @@
 		background: url("/assets/home_img_bg.png") no-repeat;
 		background-size: contain;
 		background-position: bottom left;
+	}
+
+	.index-continue {
+		position: absolute;
+		bottom: 0;
+		width: 250px;
+		left: 50%;
+		margin-left: -125px;
+		line-height: 50px;
+		font-size: 1.5em;
+		text-align: center;
+		z-index: 200;
+		color: rgba(255,255,255,.5);
+		
+	}
+
+	.index-continue:hover {
+		color: rgba(255,255,255,.85);
 	}
 
 	.home-img-chiddy {
@@ -338,6 +370,13 @@
 		top: 0;
 		right: 0;
 		z-index: -1;
+	}
+
+	.music-smoke {
+		position: absolute;
+		top: 25em;
+		left: 0;
+		z-index: 1;
 	}
 }
 
