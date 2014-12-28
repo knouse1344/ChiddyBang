@@ -111,6 +111,10 @@
 						<!-- <i class="fa fa-play"></i> -->
 					</div>
 					<iframe id="soundcloud-container" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/109929434&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+
+					<div class="progress-bar-container">
+						<div class="pbar"><span class="dot"></span></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -420,6 +424,9 @@
 		</div>
 	</div>
 	<h2>Instagram</h2>
+	<div id="pics">
+
+	</div>
 	<iframe class="instagram-pics" src="http://widget.websta.me/in/realchiddy/?s=125&w=12&h=3&b=0&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:110%; height: 420px; margin-left: -25px;" ></iframe>
 </div>
 
@@ -445,7 +452,32 @@
 
 		var playbutton = (".play-button");
 
-		
+		var iframeElement   = document.getElementById('soundcloud-container');
+		var iframeElementID = iframeElement.id;
+		var player         = SC.Widget(iframeElement);
+		var widget2         = SC.Widget(iframeElementID);
+
+		var musicwrap = $('.music-player');
+		var musicduration = 0;
+		var musicposition = 0;
+		var percent = 0;
+		var progresswidth = $(".pbar");
+
+		$(function() {
+
+			$.ajax({
+			    type: "GET",
+			    dataType: "jsonp",
+			    cache: false,
+			    user: "realchiddy",
+			    success: function(data) {
+			        for (var i = 0; i < 1; i++) {
+			          console.log(data);
+			            $("#pics").append("<img src='" + data.data.images.thumbnail.url+ "'></img>");
+			        }
+			    }
+			});
+		});
 
 		$('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
@@ -555,17 +587,35 @@
 		});
 
 		$(playbutton).on("click", function () {
-			var iframeElement   = document.getElementById('soundcloud-container');
-			var iframeElementID = iframeElement.id;
-			var player         = SC.Widget(iframeElement);
-			var widget2         = SC.Widget(iframeElementID);
+
+			player.getDuration(function(duration){
+				musicduration = duration;
+				musicduration = musicduration.toFixed(2);
+			});
 
 			if ($(this).hasClass('playing')) {
-				this.removeClass('playing');
+				$(this).removeClass('playing');
+				player.pause();
 			} else {
 				$(this).addClass('playing');
 			  	player.play();
+			  	player.getPosition(function(position){
+					musicposition = position;
+					musicposition = musicposition.toFixed(2);
+					percent = (musicposition/musicduration)*100;
+					percent = percent.toFixed(2);
+					progressbar(percent);
+				});        		
 			};
 		});
+
+		function progressbar(percent) {
+			setInterval(function() {
+				percent = parseFloat(percent);
+				percent += 0.42;
+
+				progresswidth.attr("style", "width:"+percent+"%;");
+			}, 1000);
+		}
 	});
 </script>

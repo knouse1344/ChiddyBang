@@ -273,39 +273,89 @@
 
 	iframe#soundcloud-container {
 		opacity:0;
+		display: none;
 	}
 
 	.music-player {
+		height: 400px;
 
 		.play-button {
 			width: 50px;
 			height: 50px;
-			background:transparent;
+			background: transparent;
 			border: 4px solid #fff;
 			border-radius: 25px;
 			position: relative;
 			top: 85px;
 			left: 8px;
 			z-index: 10;
+			cursor: pointer;
 			text-align: center;
+			-webkit-transition: all ease-in-out .15s;
+		    -moz-transition: all ease-in-out .15s;
+		    -o-transition: all ease-in-out .15s;
+		    transition: all ease-in-out .15s;
 
 			.play-icon {
 				width: 0;
 				height: 0;
-				margin:auto;
-				margin-top: 10px;
+				margin: auto;
+				margin-top: 11px;
 				border-style: solid;
-				border-width: 10px 0 10px 10px;
+				border-width: 9px 0 9px 15px;
+				position: relative;
+				left: 2px;
 				border-color: transparent transparent transparent #fff;
+				-webkit-transition: all ease-in-out .15s;
+			    -moz-transition: all ease-in-out .15s;
+			    -o-transition: all ease-in-out .15s;
+			    transition: all ease-in-out .15s;
 			}
+		}
 
-			i {
-				color: #fff;
-				font-size: 1.5em;
-				padding-left: .2em;
-				line-height: 43px;
+		.play-button:hover {
+			box-shadow: 0 0 20px #eee;
+		}
+
+		.playing {
+
+			.play-icon {
+				border-radius: 2px;
+				height: 20px;
+				width: 15px;
+				left: 0;
+				border-width: 0px 5px 0px 5px;
+				border-color: #fff;
 			}
+		}
 
+		.progress-bar-container {
+			width: 500px;
+			margin: auto;
+			height: 5px;
+			display: block;
+			float: none;
+			background: rgba(255,255,255,.1);
+
+			.pbar {
+				height: 5px;
+				background: #fff;
+				width: 0;
+
+				.dot {
+					width: 10px;
+					height: 10px;
+					border-radius: 5px;
+					background: #55f;
+					position: relative;
+					display: block;
+					z-index: 5;
+					top: -3px;
+					right: -5px;
+					float: right;
+					box-shadow: 0px 0px 10px #fff;
+				}
+			}
 		}
 	}
 	
