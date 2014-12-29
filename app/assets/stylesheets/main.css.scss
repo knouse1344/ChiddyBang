@@ -304,7 +304,7 @@
 				border-style: solid;
 				border-width: 9px 0 9px 15px;
 				position: relative;
-				left: 2px;
+				left: 1px;
 				border-color: transparent transparent transparent #fff;
 				-webkit-transition: all ease-in-out .15s;
 			    -moz-transition: all ease-in-out .15s;
@@ -323,7 +323,7 @@
 				border-radius: 2px;
 				height: 20px;
 				width: 15px;
-				left: 0;
+				left: -1px;
 				border-width: 0px 5px 0px 5px;
 				border-color: #fff;
 			}
@@ -341,6 +341,10 @@
 				height: 5px;
 				background: #fff;
 				width: 0;
+				-webkit-transition: all .5s;
+			    -moz-transition: all .5s;
+			    -o-transition: all .5s;
+			    transition: all .5s;
 
 				.dot {
 					width: 10px;
