@@ -7,11 +7,11 @@
 			<h1>Chiddy Bang</h1>
 			<div class="slide-in">
 				<ul>
-					<li class="nav-news"><a href="/main/#news">News</a></li>
-					<li class="nav-music"><a href="/main/#music">Music</a></li>
-					<li class="nav-shows"><a href="/main/#shows">Shows</a></li>
+					<li class="nav-news"><a href="/main/#news"><span class="nav-bar"></span>News</a></li>
+					<li class="nav-music"><a href="/main/#music"><span class="nav-bar"></span>Music</a></li>
+					<li class="nav-shows"><a href="/main/#shows"><span class="nav-bar"></span>Shows</a></li>
 					<!-- <li class="nav-shop"><a href="#">Shop</a></li> -->
-					<li class="nav-about"><a href="/main/#about">About</a></li>
+					<li class="nav-about"><a href="/main/#about"><span class="nav-bar"></span>About</a></li>
 				</ul>
 			</div>
 			<!-- 
@@ -612,7 +612,7 @@
 		function progressbar(percent) {
 			setInterval(function() {
 				percent = parseFloat(percent);
-				percent += 0.42;
+				percent += 0.21;
 
 				progresswidth.attr("style", "width:"+percent+"%;");
 			}, 500);
