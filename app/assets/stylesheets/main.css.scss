@@ -21,9 +21,12 @@
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 700;
-		margin-top: 5px;
+		margin-top: 10px;
 		margin-bottom: 80px;
 		text-transform: uppercase;
+		text-align: center;
+		position: relative;
+		z-index: 5;
 		display: inline-block;/*
 		border-top: 4px solid #fff;*/
 	}
@@ -206,10 +209,14 @@
 			display: inline-block;
 		}
 
+		.social-ends {
+			float: right;
+		}
+
 		.social-icons {
-			position: absolute;
-			right: 0;
-			top: 0;
+			position: relative;
+			float: right;
+			background: #000;
 			padding-right: 2em;
 
 			.icon {
@@ -267,11 +274,10 @@
 		left:0;
 		height:100%;
 		width: 100%;
-		z-index: -10;
+		z-index: 1;
 		background-image: url('/assets/home_bg.jpg');
 		background-size: cover;
 		background-position: center;
-		background-attachment: fixed;
 	}
 
 	.home-img-cut {
@@ -337,16 +343,6 @@
 		margin-bottom: 0;
 	}
 
-	iframe {
-		margin-top: 25px;
-		margin-bottom: 120px;
-	}
-
-	iframe#soundcloud-container {
-		opacity:0;
-		display: none;
-	}
-
 	.music-player {
 		height: 550px;
 		margin-bottom: 7em;
@@ -361,7 +357,7 @@
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			padding: 0 15px;
-			background: rgba(0,0,0,.65);
+			background: rgba(0,0,0,.85);
 			position: relative;
 			font-weight: 300;
 			z-index: 5;
@@ -374,11 +370,24 @@
 			padding: 7px 15px;
 			line-height: 20px;
 			font-size: 14px;
+			letter-spacing: 0px;
 			font-weight: 300;
-			color: #537372;
-			background: rgba(0,0,0,.35);
+			color: #aaa;
+			background: rgba(0,0,0,.65);
 			position: relative;
 			z-index: 5;
+
+			span {
+				color: #aaa;
+			}
+		}
+
+
+		.album-name, .track-name {
+			-webkit-transition: all .15s;
+	    	-moz-transition: all .15s;
+	    	-o-transition: all .15s;
+	    	transition: all .15s;
 		}
 
 		.music-player-bg {
@@ -391,20 +400,23 @@
 			left: 0;
 			height: 100%;
 			width: 100%;
-			opacity: .25;
+			opacity: .75;
+			-webkit-transition: all .5s;
+		    -moz-transition: all .5s;
+		    -o-transition: all .5s;
+		    transition: all .5s;
 		}
 
 		.play-button {
 			width: 300px;
 			height: 300px;
 			margin: auto;
-			background: rgba(0,0,0,.25);
-			border: 35px solid #8560a8;
+			background: rgba(0,0,0,.75);
+			border: 35px solid rgba(133,96,168,.75);
 			border-radius: 150px;
 			position: relative;
 			margin-top: 50px;
 			z-index: 10;
-			cursor: pointer;
 			text-align: center;
 			-webkit-transition: all ease-in-out .15s;
 		    -moz-transition: all ease-in-out .15s;
@@ -417,6 +429,7 @@
 		    	text-align: center;
 		    	font-size: 50px;
 		    	color: #fff;
+		    	cursor: pointer;
 		    	-webkit-transition: all .15s;
 		    	-moz-transition: all .15s;
 		    	-o-transition: all .15s;
@@ -449,17 +462,13 @@
 		    }
 		}
 
-		.play-button:hover {
-			box-shadow: 0 0 60px #537372;
-		}
-
 		.tracklist {
 			position: absolute;
 			bottom: 0;
 			right: 0;
 			padding: 0 1em;
 			height: 446px;
-			background: rgba(0,0,0,.35);
+			background: rgba(0,0,0,.65);
 			overflow: auto;
 			z-index: 5;
 			width: 41.66666667%;
@@ -469,8 +478,9 @@
 				display: block;
 				width: 100%;
 				height: 50px;
-				margin: 1em 0;
+				margin: 0 0 1em 0;
 				text-decoration: none;
+				cursor: pointer;
 				text-align: left;
 				-webkit-transition: all .15s;
 			    -moz-transition: all .15s;
@@ -542,7 +552,7 @@
 	}
 	
 	.news {
-		padding: 8em 0;
+		padding:0;
 		height: 60em;
 		z-index: 5;
 		position: relative;
@@ -567,7 +577,8 @@
 			}
 
 			.news-content {
-				
+				text-align: left;
+
 				p {
 					padding: 0 0 2em 0;
 					color: #aaa;
@@ -594,7 +605,7 @@
 				opacity: 0;
 				background: rgba(0,0,0,0.85);
 				z-index: 1;
-				padding: 40px;
+				padding: .75em;
 				white-space: normal;
 				font-family: "Open Sans", sans-serif;
 				-webkit-transition: all ease-in-out .15s;
@@ -603,11 +614,11 @@
 			    transition: all ease-in-out .15s;
 
 			    h3 {
-			    	font-size: 38px;
+			    	font-size: 1.25em;
 			    	font-weight: 300;
 			    	color: #fff;
 			    	text-align: left;
-			    	padding-top: 20px;
+			    	padding-top: .5em;
 			    	-webkit-transition: all ease-in-out .15s;
 				    -moz-transition: all ease-in-out .15s;
 				    -o-transition: all ease-in-out .15s;
@@ -618,8 +629,8 @@
 			    	color: #ddd;
 			    	text-align: left;
 			    	padding-top: 1em;
-			    	font-size: 1em;
-			    	padding-bottom: 2em;
+			    	font-size: .9em;
+			    	padding-bottom: 1em;
 			    	margin-bottom: 2em;
 					border-bottom: 2px solid rgba(255,255,255,.2);
 			    	-webkit-transition: all ease-in-out .25s;
@@ -716,16 +727,15 @@
 
 	.shows-bg {
 		width: 100%;
-
-		.bg {
-			position: fixed;
-			top: 0;
-			left: -25%;
-			opacity: .3;
-			width: auto;
-			height: 100%;
-			z-index: -15;
-		}
+		top: 0;
+		left: -25%;
+		opacity: 1d;
+		width: auto;
+		background: url('/assets/home_image_v2.5.png');
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
+		height: 100%;
 	}
 
 /*	.shows-bg::after {
@@ -882,6 +892,9 @@
 
 #about {
 	overflow: hidden;
+	z-index: 5;
+	position: relative;
+	background: #000;
 
 	h2 {
 		text-align: center;
@@ -904,6 +917,73 @@
 				opacity: .5;
 			}
 		}
+	}
+}
+
+footer {
+	position: relative;
+	z-index: 15;
+	background: #000;
+	padding-bottom: 200px;
+}
+
+.footer {
+	height: 64px;
+	border-top: 2px solid rgba(255,255,255,.2);
+	border-bottom: 2px solid rgba(255,255,255,.2);
+	padding-top: 10px;
+	font-family: 'Open Sans',sans-serif;
+
+	h4 {
+		color: #fff;
+	}
+
+	input {
+		line-height: 40px;
+		height: 40px;
+		width: 40%;
+		float: left;
+		margin-left: -15px;
+		padding: 0 1em;
+		border: 0;
+	}
+
+	.submit {
+		display: block;
+		float: left;
+		background: #333;
+		height: 41px;
+		text-transform: uppercase;
+		margin-left: 20px;
+		margin-right: 20px;
+		width: 25%;
+		text-align: center;
+		color: #fff;
+		cursor: pointer;
+
+		p {
+			line-height: 40px;
+			color: #aaa;
+			font-family: 'Open Sans',sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+		}
+	}
+
+	.copyright {
+		text-align: right;
+		color: #aaa;
+		font-size: .8em;
+		line-height: 20px;
+		font-weight: 300;
+		padding-right: 40px;
+	}
+
+	.brand {
+		text-align: right;
+		padding-right: 0;
+		padding-left: 55px;
+		border-left: 2px solid rgba(255,255,255,.2);
 	}
 }
 

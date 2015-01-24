@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,100' rel='stylesheet' type='text/css'>
   <script src="https://w.soundcloud.com/player/api.js"></script>
+  <script src="http://connect.soundcloud.com/sdk.js"></script>
   <script src="https://cdn.rawgit.com/stevenschobert/instafeed.js/master/instafeed.min.js"></script>
   <script src="https://cdn.rawgit.com/malihu/malihu-custom-scrollbar-plugin/master/jquery.mCustomScrollbar.concat.min.js"></script>
   <link href="https://cdn.rawgit.com/malihu/malihu-custom-scrollbar-plugin/master/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css">
@@ -18,5 +19,20 @@
 
 	<%= yield %>
 	
+  <footer>
+    <div class="container">
+      <div class="footer col-sm-12">
+        <div class="row">
+          <div class="col-sm-8">
+            <input type="text" placeholder="subscribe for updates">
+            <div class="submit"><p>Submit</p></div>
+            <div class="copyright">Copyright &copy; 2015<br>Chiddy Bang</div>
+          </div>
+          <div class="brand col-sm-4">
+            <h4>responsively made </h4>
+          </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
