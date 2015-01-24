@@ -21,7 +21,7 @@
 		color: #fff;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 700;
-		margin-top: 10px;
+		margin-top: 15px;
 		margin-bottom: 80px;
 		text-transform: uppercase;
 		text-align: center;
@@ -324,11 +324,20 @@
 	}
 }
 
+#music {
+	background: url('/assets/player_bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#news {
+	background: #000;
+}
+
 #music, #news {
 	padding-bottom: 80px;
 	z-index: 6;
 	position: relative;
-	background: #000;
 
 	h2 {
 		display: block;
@@ -373,7 +382,7 @@
 			letter-spacing: 0px;
 			font-weight: 300;
 			color: #aaa;
-			background: rgba(0,0,0,.65);
+			background: rgba(0,0,0,.75);
 			position: relative;
 			z-index: 5;
 
@@ -468,13 +477,13 @@
 			right: 0;
 			padding: 0 1em;
 			height: 446px;
-			background: rgba(0,0,0,.65);
+			background: rgba(0,0,0,.75);
 			overflow: auto;
 			z-index: 5;
 			width: 41.66666667%;
 
 			.track-item {
-				background: rgba(80,80,80,.35);
+				background: rgba(150,150,150,.35);
 				display: block;
 				width: 100%;
 				height: 50px;
@@ -500,7 +509,7 @@
 			}
 
 			.track-item:hover {
-				background: rgba(80,80,80,.85);
+				background: rgba(150,150,150,.85);
 				border-bottom: 4px solid #8560a8;
 			}
 		}
@@ -700,10 +709,10 @@
 
 	.news-graffiti {
 		position: absolute;
-		top: 10em;
-		width: 800px;
+		top: 0em;
+		width: 1300px;
 		opacity: .25;
-		left: 20%;
+		left: 0;
 		z-index: 0;
 	}
 
@@ -719,7 +728,7 @@
 }
 
 #shows {
-	padding: 0 0 80px 0;
+	padding: 0;
 	overflow: hidden;
 	background: #000;
 	position: relative;
@@ -894,15 +903,25 @@
 	overflow: hidden;
 	z-index: 5;
 	position: relative;
-	background: #000;
+	background: url('/assets/graffiti_bg.jpg') no-repeat;
+	background-size: cover;
+	background-position: center;
 
 	h2 {
-		text-align: center;
-		color: #eee;
-		font-size: 24px;
-		padding-bottom:5px;
-		font-family: "Open Sans", sans-serif;
-		font-weight: 300;
+		display: block;
+		text-align: left;
+		color: #fff;
+		font-weight: 600;
+		text-transform: uppercase;
+		font-size: 1.65em;
+		letter-spacing: 2px;
+		border-top: 2px solid rgba(255,255,255,.2);
+		padding: 1em 0;
+		margin-bottom: 0;
+	}
+
+	.instagram-img {
+		width: 100%;
 	}
 
 	iframe.instagram-pics {
