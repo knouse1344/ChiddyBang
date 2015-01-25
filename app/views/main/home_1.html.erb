@@ -279,11 +279,13 @@
 						<h3>Album Name: <span class="album-name">Baggage Claim</span></h3>
 					</div>
 					<div class="music-player-bg"></div>
-					<div class="col-sm-7">
-						<div class="play-button">
-							<i class="fa fa-fast-backward"></i>
-							<i class="fa fa-play"></i>
-							<i class="fa fa-fast-forward"></i>
+					<div class="row">
+						<div class="col-sm-7">
+							<div class="play-button">
+								<i class="fa fa-fast-backward"></i>
+								<i class="fa fa-play"></i>
+								<i class="fa fa-fast-forward"></i>
+							</div>
 						</div>
 					</div>
 					<div class="tracklist">	
@@ -640,37 +642,24 @@
 		});
 
 		$(fbicon).hover(function () {
-			$(this).attr("style", "background: url('/assets/face-smoke.gif?rnd="+Math.random()+"'); background-position: center; background-size: 100%;");
-			setTimeout(function() {
-				$(".fbicon-img").attr("style", "opacity: 0;");
-			},10);
+			$(this).append("<img class='fbimg-hover' src='/assets/face-smoke.gif?rnd="+Math.random()+"' />");
 		}, function () {
-			$(".fbicon-img").attr("style", "opacity: 1;");
-			$(this).removeAttr('style');
+			$('.fbimg-hover').remove();
 		});
 		$(twicon).hover(function () {
-			$(this).attr("style", "background: url('/assets/twit-smoke.gif?rnd="+Math.random()+"'); background-position: center; background-size: 100%;");
-			setTimeout(function() {
-				$(".twicon-img").attr("style", "opacity: 0;");
-			},10);
+			$(this).append("<img class='twiimg-hover' src='/assets/twit-smoke.gif?rnd="+Math.random()+"' />");
 		}, function () {
-			$(".twicon-img").attr("style", "opacity: 1;");
-			$(this).removeAttr('style');
+			$('.twiimg-hover').remove();
 		});
 		$(inicon).hover(function () {
-			$(this).attr("style", "background: url('/assets/inst-smoke.gif?rnd="+Math.random()+"'); background-position: center; background-size: 100%;");
-			setTimeout(function() {
-				$(".inicon-img").attr("style", "opacity: 0;");
-			},10);
+			$(this).append("<img class='inimg-hover' src='/assets/inst-smoke.gif?rnd="+Math.random()+"' />");
 		}, function () {
-			$(".inicon-img").attr("style", "opacity: 1;");
-			$(this).removeAttr('style');
+			$('.inimg-hover').remove();
 		});
 		$(piicon).hover(function () {
-			$(this).append("<img class='piiimg' src='/assets/pint-smoke.gif?rnd="+Math.random()+"' />");
+			$(this).append("<img class='piimg-hover' src='/assets/pint-smoke.gif?rnd="+Math.random()+"' />");
 		}, function () {
-			$(".piicon-img").attr("style", "opacity: 1;");
-			$('.piiimg').remove();
+			$('.piimg-hover').remove();
 		});
 
 		var track;

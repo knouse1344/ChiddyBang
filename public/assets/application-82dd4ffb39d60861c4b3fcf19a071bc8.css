@@ -267,7 +267,7 @@ border-top: 4px solid #fff;*/
   vertical-align: top;
 }
 /* line 291, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
-.nav-bottom .nav-container .social-icons .piiimg {
+.nav-bottom .nav-container .social-icons .piimg-hover, .nav-bottom .nav-container .social-icons .inimg-hover, .nav-bottom .nav-container .social-icons .twiimg-hover, .nav-bottom .nav-container .social-icons .fbimg-hover {
   position: absolute;
   left: 0;
   top: 0;
@@ -433,7 +433,7 @@ border-top: 4px solid #fff;*/
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0 15px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.79);
   position: relative;
   font-weight: 300;
   z-index: 5;
@@ -455,7 +455,7 @@ border-top: 4px solid #fff;*/
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 58.33333%;
   opacity: .75;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -467,11 +467,11 @@ border-top: 4px solid #fff;*/
   width: 300px;
   height: 300px;
   margin: auto;
+  margin: 100px auto 0 auto;
   background: rgba(0, 0, 0, 0.75);
-  border: 35px solid rgba(133, 96, 168, 0.5);
+  border: 35px solid rgba(133, 96, 168, 0.75);
   border-radius: 150px;
   position: relative;
-  margin-top: 50px;
   z-index: 10;
   text-align: center;
   -webkit-transition: all ease-in-out .15s;
@@ -1091,6 +1091,13 @@ footer {
 /* line 1138, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link:hover .fuse {
   visibility: visible;
+}
+
+@media (max-width: 1200px) {
+  /* line 1146, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+  body {
+    font-size: 3em !important;
+  }
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
