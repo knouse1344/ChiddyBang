@@ -282,6 +282,7 @@
 					<div class="row">
 						<div class="col-sm-7">
 							<div class="play-button">
+								<img class="spinner" src="/assets/spinner.png" />
 								<i class="fa fa-fast-backward"></i>
 								<i class="fa fa-play"></i>
 								<i class="fa fa-fast-forward"></i>
@@ -858,15 +859,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 		$(playbutton).on("click", function () {
 
 			musicduration = track.durationEstimate;
@@ -896,12 +888,29 @@
 			};
 		});
 
+		var spinner = $('.spinner');
+		
+
 		function progressbar(percent) {
-				//percent = parseFloat(percent);
+
+				var degrees = 0;
+
+				degrees = parseFloat(degrees);
+
+				percent = parseFloat(percent);
 				//percent += 0.21;
 
+				percent = percent*3.5;
 				console.log(percent);
 
+				spin(percent);
+
+				function spin(degree) {
+					$(spinner).css({'-webkit-transform' : 'rotate('+ degree +'deg)',
+	                 '-moz-transform' : 'rotate('+ degree +'deg)',
+	                 '-ms-transform' : 'rotate('+ degree +'deg)',
+	                 'transform' : 'rotate('+ degree +'deg)'});
+			}
 		}
 
 
