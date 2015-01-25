@@ -19,10 +19,11 @@
 
 	h1 {
 		color: #fff;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 700;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
 		margin-top: 15px;
 		margin-bottom: 80px;
+		letter-spacing: 5px;
 		text-transform: uppercase;
 		text-align: center;
 		position: relative;
@@ -69,18 +70,69 @@
 
 		h1 {
 			position: absolute;
-			left: 3%;
+			left: 1.5em;
 			font-family: 'Raleway', sans-serif;
 			display: inline-block;
 			font-weight: 200;
 			margin-top: 0;
 			color: rgba(255,255,255,.45);
-			letter-spacing: 0px;
+			letter-spacing: 1px;
+			font-size: 2em;
 			line-height: 50px;
 			-webkit-transition: all ease-in-out .15s;
 		    -moz-transition: all ease-in-out .15s;
 		    -o-transition: all ease-in-out .15s;
 		    transition: all ease-in-out .15s;
+		}
+
+		.nav-state {
+			width: 75px;
+			margin: auto;
+			position: absolute;
+			left: 50%;
+			margin-left: -38px;
+			bottom: 0;
+
+			ul {
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: inline-block;
+					width: 5px;
+					height: 5px;
+					margin: 0 2px;
+					border-radius: 3px;
+					background: #fff;
+					opacity: .1;
+					-webkit-transition: all .15s;
+				    -moz-transition: all .15s;
+				    -o-transition: all .15s;
+				    transition: all .15s;
+				}
+			}
+
+			ul.news {
+				li:first-child {
+					opacity: 1;
+				}
+			}
+			ul.shows {
+				li:nth-child(2) {
+					opacity: 1;
+				}
+			}
+			ul.music {
+				li:nth-child(3){
+					opacity: 1;
+				}
+			}
+			ul.about {
+				li:last-child {
+					opacity: 1;
+				}
+			}
+
 		}
 
 		.slide-in {
@@ -250,7 +302,7 @@
 	.nav-container {
 
 		h1 {
-			left: 1%;
+			font-size: 1.5em;
 		}
 	}
 
@@ -337,6 +389,7 @@
 #music, #news {
 	padding-bottom: 80px;
 	z-index: 6;
+	overflow: hidden;
 	position: relative;
 
 	h2 {
@@ -357,7 +410,7 @@
 		margin-bottom: 7em;
 
 
-		h3 {
+		h3, h3 span {
 			width: 100%;
 			margin: 0;
 			text-align: left;
@@ -366,31 +419,11 @@
 			text-transform: uppercase;
 			letter-spacing: 2px;
 			padding: 0 15px;
-			background: rgba(0,0,0,.85);
+			background: rgba(0,0,0,.9);
 			position: relative;
 			font-weight: 300;
 			z-index: 5;
 		}
-
-		h4 {
-			width: 100%;
-			margin: 0;
-			text-align: left;
-			padding: 7px 15px;
-			line-height: 20px;
-			font-size: 14px;
-			letter-spacing: 0px;
-			font-weight: 300;
-			color: #aaa;
-			background: rgba(0,0,0,.75);
-			position: relative;
-			z-index: 5;
-
-			span {
-				color: #aaa;
-			}
-		}
-
 
 		.album-name, .track-name {
 			-webkit-transition: all .15s;
@@ -476,7 +509,7 @@
 			bottom: 0;
 			right: 0;
 			padding: 0 1em;
-			height: 446px;
+			height: 500px;
 			background: rgba(0,0,0,.75);
 			overflow: auto;
 			z-index: 5;
@@ -491,7 +524,9 @@
 				text-decoration: none;
 				cursor: pointer;
 				text-align: left;
+				position: relative;
 				box-shadow: 2px 2px 5px rgba(0,0,0,.4);
+				border-bottom: 4px solid rgba(133,96,168,.35);
 				-webkit-transition: all .15s;
 			    -moz-transition: all .15s;
 			    -o-transition: all .15s;
@@ -501,16 +536,38 @@
 					margin: 0;
 					color: #fff;
 					font-weight: 300;
-					font-size: .8em;
+					font-size: .9em;
 					padding-left: 1em;
 					text-transform: uppercase;
-					letter-spacing: 1px;
+					letter-spacing: 2px;
 					line-height: 50px;
+					position: relative;
+					z-index: 5;
+				}
+
+				.playing-gif {
+					position: absolute;
+					background: url("/assets/tracklist_playing.gif") no-repeat;
+					background-size: 100%;
+					background-position: bottom;
+					width: 100px;
+					height: 46px;
+					bottom: 0;
+					right: 0;
+					-webkit-transition: all .25s;
+				    -moz-transition: all .25s;
+				    -o-transition: all .25s;
+				    transition: all .25s;
 				}
 			}
 
+			.track-item.selected {
+				background: #333;
+				border-bottom: 4px solid #8560a8;
+			}
+
 			.track-item:hover {
-				background: rgba(150,150,150,.45);
+				background: #333;
 				border-bottom: 4px solid #8560a8;
 			}
 		}
@@ -567,18 +624,38 @@
 		z-index: 5;
 		position: relative;
 
+		.post-date {
+			color: #aaa;
+			margin: 0;
+			font-weight: 300;
+			letter-spacing: 1px;
+			font-size: .8em;
+		}
+
+		h3 {
+			display: block;
+			font-weight: 600;
+			text-transform: uppercase;
+			font-size: 1.65em;
+			letter-spacing: 2px;
+			padding: 0;
+			margin-bottom: 0;
+			margin-top: .5em;
+			color: #fff;
+		}
+
 		.news-row {
 			padding-top: 3em;
 			padding-bottom: 3em;
 		}
 
 		.news-box {
-			border-bottom: 2px solid rgba(150,150,150,.5);
+			border-bottom: 2px solid rgba(150,150,150,.15);
 
 			.news-title {
 				text-align: left;
 				padding: 1em 0;
-				border-top: 2px solid rgba(255,255,255,.75);
+				border-top: 2px solid #8560a8;
 
 				h2 {
 					text-align: left;
@@ -838,7 +915,8 @@
 				text-decoration: none;
 				color: #fff;
 				text-transform: uppercase;
-				font-weight: 600;
+				font-weight: 300;
+				letter-spacing: 1px;
 				border-radius: 10px;
 				margin-top:2em;
 				padding: .5em 0;
