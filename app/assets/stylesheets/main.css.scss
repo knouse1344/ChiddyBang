@@ -24,6 +24,7 @@
 		margin-top: 15px;
 		margin-bottom: 80px;
 		letter-spacing: 5px;
+		text-shadow: 4px 4px #000;
 		text-transform: uppercase;
 		text-align: center;
 		position: relative;
@@ -278,12 +279,19 @@
 				height: 50px;
 				font-size: 30px;
 				padding: 0;
+				position: relative;
 				color: rgba(255,255,255,.3);
 				background-position: center;
 
 			    img {
 			    	vertical-align: top;
 			    }
+			}
+
+			.piiimg {
+				position: absolute;
+				left: 0;
+				top:0;
 			}
 
 			.icon:hover {

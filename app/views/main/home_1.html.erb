@@ -667,13 +667,10 @@
 			$(this).removeAttr('style');
 		});
 		$(piicon).hover(function () {
-			$(this).attr("style", "background: url('/assets/pint-smoke.gif?rnd="+Math.random()+"'); background-position: center; background-size: 100%;");
-			setTimeout(function() {
-				$(".piicon-img").attr("style", "opacity: 0;");
-			},10);
+			$(this).append("<img class='piiimg' src='/assets/pint-smoke.gif?rnd="+Math.random()+"' />");
 		}, function () {
 			$(".piicon-img").attr("style", "opacity: 1;");
-			$(this).removeAttr('style');
+			$('.piiimg').remove();
 		});
 
 		var track;
