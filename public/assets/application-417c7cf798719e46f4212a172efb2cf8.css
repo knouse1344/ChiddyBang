@@ -93,16 +93,17 @@ border-top: 4px solid #fff;*/
   display: inline-block;
   font-weight: 200;
   margin-top: 0;
-  color: rgba(255, 255, 255, 0.45);
+  color: #fff;
   letter-spacing: 1px;
   font-size: 2em;
   line-height: 50px;
+  text-shadow: 0;
   -webkit-transition: all ease-in-out .15s;
   -moz-transition: all ease-in-out .15s;
   -o-transition: all ease-in-out .15s;
   transition: all ease-in-out .15s;
 }
-/* line 103, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 104, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .nav-state {
   width: 75px;
   margin: auto;
@@ -111,12 +112,12 @@ border-top: 4px solid #fff;*/
   margin-left: -38px;
   bottom: 0;
 }
-/* line 111, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 112, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .nav-state ul {
   margin: 0;
   padding: 0;
 }
-/* line 115, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 116, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .nav-state ul li {
   display: inline-block;
   width: 5px;
@@ -130,23 +131,23 @@ border-top: 4px solid #fff;*/
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 131, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 132, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .nav-state ul.news li:first-child {
   opacity: 1;
 }
-/* line 136, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 137, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .nav-state ul.shows li:nth-child(2) {
   opacity: 1;
 }
-/* line 141, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 142, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .nav-state ul.music li:nth-child(3) {
   opacity: 1;
 }
-/* line 146, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 147, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .nav-state ul.about li:last-child {
   opacity: 1;
 }
-/* line 153, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 154, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in {
   position: fixed;
   width: 300px;
@@ -159,13 +160,13 @@ border-top: 4px solid #fff;*/
   -o-transition: all ease-in-out .15s;
   transition: all ease-in-out .15s;
 }
-/* line 165, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 166, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul {
   list-style-type: none;
   text-align: left;
   padding-left: 0;
 }
-/* line 172, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 173, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul li a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -180,7 +181,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all ease-in-out .15s;
   transition: all ease-in-out .15s;
 }
-/* line 186, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 187, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul li a .nav-bar {
   position: absolute;
   left: 0;
@@ -192,47 +193,47 @@ border-top: 4px solid #fff;*/
   -o-transition: all ease-in-out .15s;
   transition: all ease-in-out .15s;
 }
-/* line 201, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 202, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-news .nav-bar {
   width: 40px;
 }
-/* line 206, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 207, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-news.active .nav-bar {
   width: 90px;
   background: #8560a8;
 }
-/* line 213, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 214, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-music .nav-bar {
   width: 70px;
 }
-/* line 218, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 219, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-music.active .nav-bar {
   width: 110px;
   background: #8560a8;
 }
-/* line 225, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 226, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-shows .nav-bar {
   width: 30px;
 }
-/* line 230, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 231, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-shows.active .nav-bar {
   width: 90px;
   background: #8560a8;
 }
-/* line 237, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 238, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-about .nav-bar {
   width: 15px;
 }
-/* line 242, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 243, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul .nav-about.active .nav-bar {
   width: 130px;
   background: #8560a8;
 }
-/* line 250, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 251, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .slide-in ul li.active a {
   color: white;
 }
-/* line 257, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 258, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container a {
   display: inline-block;
   padding: 0 15px;
@@ -244,28 +245,28 @@ border-top: 4px solid #fff;*/
   text-transform: uppercase;
   vertical-align: top;
 }
-/* line 268, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 269, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container a .fa {
   margin-left: 10px;
 }
-/* line 273, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 274, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .spacer {
   width: 120px;
   height: 30px;
   display: inline-block;
 }
-/* line 279, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 280, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .social-ends {
   float: right;
 }
-/* line 283, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 284, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .social-icons {
   position: relative;
   float: right;
   background: #000;
   padding-right: 2em;
 }
-/* line 289, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 290, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .social-icons .icon {
   float: left;
   line-height: 50px;
@@ -277,44 +278,44 @@ border-top: 4px solid #fff;*/
   color: rgba(255, 255, 255, 0.3);
   background-position: center;
 }
-/* line 300, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 301, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .social-icons .icon img {
   vertical-align: top;
 }
-/* line 305, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 306, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .social-icons .piimg-hover, .nav-bottom .nav-container .social-icons .inimg-hover, .nav-bottom .nav-container .social-icons .twiimg-hover, .nav-bottom .nav-container .social-icons .fbimg-hover {
   position: absolute;
   left: 0;
   top: 0;
 }
-/* line 311, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 312, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .nav-bottom .nav-container .social-icons .icon:hover {
   color: rgba(255, 255, 255, 0);
 }
 
-/* line 318, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 319, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .nav-fixed {
   position: fixed;
   height: 50px;
   top: 0;
   left: 0;
 }
-/* line 326, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 327, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .nav-fixed .nav-container h1 {
   font-size: 1.5em;
 }
-/* line 331, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 332, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .nav-fixed .slide-in {
   left: 0;
 }
 
-/* line 339, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 340, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .helper {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 345, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 346, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .home-img {
   position: absolute;
   top: 10%;
@@ -326,7 +327,7 @@ border-top: 4px solid #fff;*/
   background-size: cover;
   background-position: center;
 }
-/* line 357, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 358, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .home-img-cut {
   width: 100%;
   height: 80%;
@@ -338,7 +339,7 @@ border-top: 4px solid #fff;*/
   background-size: contain;
   background-position: bottom left;
 }
-/* line 369, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 370, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .index-continue {
   position: absolute;
   bottom: 0;
@@ -351,11 +352,11 @@ border-top: 4px solid #fff;*/
   z-index: 200;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 383, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 384, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .index-continue:hover {
   color: rgba(255, 255, 255, 0.85);
 }
-/* line 387, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 388, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #index .home-img-chiddy {
   width: 30%;
   left: 60%;
@@ -369,26 +370,26 @@ border-top: 4px solid #fff;*/
   background-size: contain;
 }
 
-/* line 401, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 402, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music {
   background: url("/assets/player_bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-/* line 407, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 408, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #news {
   background: #000;
 }
 
-/* line 411, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 412, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music, #news {
   padding-bottom: 80px;
   z-index: 6;
   overflow: hidden;
   position: relative;
 }
-/* line 417, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 418, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music h2, #news h2 {
   display: block;
   text-align: left;
@@ -401,7 +402,7 @@ border-top: 4px solid #fff;*/
   padding: 1em 0;
   margin-bottom: 0;
 }
-/* line 430, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 431, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player, #news .music-player {
   height: 550px;
   margin-bottom: 7em;
@@ -438,7 +439,7 @@ border-top: 4px solid #fff;*/
   			}
   		}*/
 }
-/* line 435, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 436, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player h3, #music .music-player h3 span, #news .music-player h3, #news .music-player h3 span {
   width: 100%;
   margin: 0;
@@ -453,14 +454,14 @@ border-top: 4px solid #fff;*/
   font-weight: 300;
   z-index: 5;
 }
-/* line 450, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 451, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .album-name, #music .music-player .track-name, #news .music-player .album-name, #news .music-player .track-name {
   -webkit-transition: all .15s;
   -moz-transition: all .15s;
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 457, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 458, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .music-player-bg, #news .music-player .music-player-bg {
   background: url("/assets/swellyxpress.jpg") no-repeat;
   background-size: cover;
@@ -477,7 +478,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all .5s;
   transition: all .5s;
 }
-/* line 474, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 475, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface, #news .music-player .player-interface {
   width: 300px;
   height: 300px;
@@ -492,7 +493,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all ease-in-out .15s;
   transition: all ease-in-out .15s;
 }
-/* line 488, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 489, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .player-buttons, #news .music-player .player-interface .player-buttons {
   width: 300px;
   height: 300px;
@@ -500,7 +501,7 @@ border-top: 4px solid #fff;*/
   z-index: 5;
   border-radius: 150px;
 }
-/* line 496, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 497, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .spinner, #news .music-player .player-interface .spinner {
   position: absolute;
   top: -40px;
@@ -509,7 +510,7 @@ border-top: 4px solid #fff;*/
   height: 380px;
   z-index: 2;
 }
-/* line 505, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 506, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .player-buttons-material, #news .music-player .player-interface .player-buttons-material {
   position: absolute;
   line-height: 300px;
@@ -521,7 +522,7 @@ border-top: 4px solid #fff;*/
   height: 300px;
   border-radius: 150px;
 }
-/* line 516, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 517, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .player-buttons-material .ping, #news .music-player .player-interface .player-buttons-material .ping {
   width: 0px;
   height: 00px;
@@ -536,7 +537,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all .33s;
   transition: all .33s;
 }
-/* line 533, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 534, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface i, #news .music-player .player-interface i {
   line-height: 300px;
   vertical-align: middle;
@@ -551,35 +552,35 @@ border-top: 4px solid #fff;*/
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 548, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 549, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .fa-play, #news .music-player .player-interface .fa-play {
   opacity: .65;
   color: #8560a8;
 }
-/* line 553, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 554, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .fa-play:hover, #news .music-player .player-interface .fa-play:hover {
   opacity: 1;
 }
-/* line 556, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 557, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .fa-fast-forward, #news .music-player .player-interface .fa-fast-forward {
   float: right;
   margin-right: 10px;
 }
-/* line 560, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 561, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .fa-fast-backward, #news .music-player .player-interface .fa-fast-backward {
   float: left;
   margin-left: 10px;
 }
-/* line 564, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 565, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .fa-fast-forward, #music .music-player .player-interface .fa-fast-backward, #news .music-player .player-interface .fa-fast-forward, #news .music-player .player-interface .fa-fast-backward {
   font-size: 25px;
   opacity: .25;
 }
-/* line 569, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 570, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .player-interface .fa-fast-forward:hover, #music .music-player .player-interface .fa-fast-backward:hover, #news .music-player .player-interface .fa-fast-forward:hover, #news .music-player .player-interface .fa-fast-backward:hover {
   opacity: 1;
 }
-/* line 574, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 575, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .tracklist, #news .music-player .tracklist {
   position: absolute;
   bottom: 0;
@@ -591,7 +592,7 @@ border-top: 4px solid #fff;*/
   z-index: 5;
   width: 41.66666667%;
 }
-/* line 585, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 586, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .tracklist .track-item, #news .music-player .tracklist .track-item {
   background: rgba(150, 150, 150, 0.15);
   display: block;
@@ -608,7 +609,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 601, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 602, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .tracklist .track-item h5, #news .music-player .tracklist .track-item h5 {
   margin: 0;
   color: #fff;
@@ -622,7 +623,7 @@ border-top: 4px solid #fff;*/
   position: relative;
   z-index: 5;
 }
-/* line 614, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 615, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .tracklist .track-item h5 .time, #news .music-player .tracklist .track-item h5 .time {
   padding: 0 1em;
   margin-top: 9px;
@@ -632,7 +633,7 @@ border-top: 4px solid #fff;*/
   float: right;
   border-left: 2px solid rgba(255, 255, 255, 0.15);
 }
-/* line 625, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 626, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .tracklist .track-item .playing-gif, #news .music-player .tracklist .track-item .playing-gif {
   position: absolute;
   background: url("/assets/tracklist_playing.gif") no-repeat;
@@ -647,17 +648,17 @@ border-top: 4px solid #fff;*/
   -o-transition: all .25s;
   transition: all .25s;
 }
-/* line 641, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 642, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .tracklist .track-item.selected, #news .music-player .tracklist .track-item.selected {
   background: #333;
   border-bottom: 4px solid #8560a8;
 }
-/* line 646, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 647, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .tracklist .track-item:hover, #news .music-player .tracklist .track-item:hover {
   background: #333;
   border-bottom: 4px solid #8560a8;
 }
-/* line 654, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 655, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .music-player .playing .play-icon, #news .music-player .playing .play-icon {
   border-radius: 2px;
   height: 20px;
@@ -666,14 +667,14 @@ border-top: 4px solid #fff;*/
   border-width: 0px 5px 0px 5px;
   border-color: #fff;
 }
-/* line 698, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 699, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news, #news .news {
   padding: 0;
   height: 60em;
   z-index: 5;
   position: relative;
 }
-/* line 704, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 705, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news h3, #news .news h3 {
   display: block;
   font-weight: 500;
@@ -689,18 +690,18 @@ border-top: 4px solid #fff;*/
   color: #fff;
   border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
 }
-/* line 720, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 721, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box, #news .news .news-box {
   padding-top: 2em;
   padding-bottom: 8em;
   border-top: 2px solid #8560a8;
 }
-/* line 725, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 726, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box .news-title, #news .news .news-box .news-title {
   text-align: left;
   margin-bottom: 1em;
 }
-/* line 729, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 730, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box .news-title .post-date, #news .news .news-box .news-title .post-date {
   color: #aaa;
   margin: 0;
@@ -709,23 +710,23 @@ border-top: 4px solid #fff;*/
   font-size: .8em;
   padding-bottom: 0;
 }
-/* line 738, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 739, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box .news-title h2, #news .news .news-box .news-title h2 {
   text-align: left;
 }
-/* line 744, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 745, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box .news-img, #news .news .news-box .news-img {
   padding: 0;
 }
-/* line 747, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 748, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box .news-img img, #news .news .news-box .news-img img {
   width: 100%;
 }
-/* line 752, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 753, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box .news-content, #news .news .news-box .news-content {
   text-align: left;
 }
-/* line 755, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 756, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news .news-box .news-content p, #news .news .news-box .news-content p {
   color: #aaa;
   font-size: 1.1em;
@@ -736,15 +737,15 @@ border-top: 4px solid #fff;*/
   font-family: 'Raleway', sans-serif;
   white-space: normal;
 }
-/* line 769, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 770, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row, #news .album-row {
   padding: 25px 0;
 }
-/* line 772, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 773, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album, #news .album-row .album {
   position: relative;
 }
-/* line 775, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 776, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album .hover-info, #news .album-row .album .hover-info {
   width: 100%;
   height: 100%;
@@ -762,7 +763,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all ease-in-out .15s;
   transition: all ease-in-out .15s;
 }
-/* line 792, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 793, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album .hover-info h3, #news .album-row .album .hover-info h3 {
   font-size: 1.25em;
   font-weight: 300;
@@ -774,7 +775,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all ease-in-out .15s;
   transition: all ease-in-out .15s;
 }
-/* line 804, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 805, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album .hover-info h4, #news .album-row .album .hover-info h4 {
   color: #ddd;
   text-align: left;
@@ -788,53 +789,53 @@ border-top: 4px solid #fff;*/
   -o-transition: all ease-in-out .25s;
   transition: all ease-in-out .25s;
 }
-/* line 818, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 819, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album .hover-info .album-info, #news .album-row .album .hover-info .album-info {
   text-align: left;
 }
-/* line 828, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 829, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album .hover-info .track-listing ul, #news .album-row .album .hover-info .track-listing ul {
   list-style-type: none;
 }
-/* line 831, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 832, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album .hover-info .track-listing ul li, #news .album-row .album .hover-info .track-listing ul li {
   color: #ccc;
   font-size: 1em;
   text-align: right;
   padding: .5em 0;
 }
-/* line 841, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 842, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album img, #news .album-row .album img {
   margin: auto;
   width: 100%;
 }
-/* line 849, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 850, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album:hover .hover-info, #news .album-row .album:hover .hover-info {
   opacity: 1;
 }
-/* line 852, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 853, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album:hover .hover-info h3, #news .album-row .album:hover .hover-info h3 {
   padding-top: 0;
 }
-/* line 856, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 857, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .album-row .album:hover .hover-info p, #news .album-row .album:hover .hover-info p {
   padding-top: 0;
 }
-/* line 863, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 864, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news-bg, #news .news-bg {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 0;
 }
-/* line 870, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 871, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news-smoke, #news .news-smoke {
   position: absolute;
   top: 25em;
   left: 0;
   z-index: 0;
 }
-/* line 877, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 878, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news-graffiti, #news .news-graffiti {
   position: absolute;
   top: 0em;
@@ -843,7 +844,7 @@ border-top: 4px solid #fff;*/
   left: 0;
   z-index: 0;
 }
-/* line 886, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 887, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #music .news-grid, #news .news-grid {
   background-image: url("/assets/page_bg_grid.png");
   position: absolute;
@@ -854,7 +855,7 @@ border-top: 4px solid #fff;*/
   z-index: 0;
 }
 
-/* line 897, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 898, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows {
   padding: 0;
   overflow: hidden;
@@ -862,7 +863,7 @@ border-top: 4px solid #fff;*/
   position: relative;
   z-index: 15;
 }
-/* line 904, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 905, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .shows-bg {
   top: 0;
   left: 0;
@@ -875,12 +876,12 @@ border-top: 4px solid #fff;*/
   background-size: cover;
   z-index: -1;
 }
-/* line 917, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 918, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar {
   margin-bottom: 5em;
   text-align: left;
 }
-/* line 921, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 922, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar h2 {
   display: block;
   color: #fff;
@@ -892,7 +893,7 @@ border-top: 4px solid #fff;*/
   padding: 1em 0;
   margin-bottom: 0;
 }
-/* line 933, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 934, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar .date {
   border-right: 1px solid #000;
   border-bottom: 2px solid #000;
@@ -907,7 +908,7 @@ border-top: 4px solid #fff;*/
   -o-transition: all .15s;
   transition: all .15s;
 }
-/* line 947, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 948, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar .date h3 {
   border-top: 3px solid #8560a8;
   font-size: 1.25em;
@@ -919,11 +920,11 @@ border-top: 4px solid #fff;*/
   margin-top: 0;
   margin-bottom: 1.5em;
 }
-/* line 959, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 960, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar .date p {
   font-size: .8em;
 }
-/* line 963, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 964, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar .date .tix {
   width: 80%;
   margin: auto;
@@ -939,19 +940,19 @@ border-top: 4px solid #fff;*/
   margin-top: 2em;
   padding: .5em 0;
 }
-/* line 979, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 980, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar .date .tix:hover {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 984, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 985, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar .date:last-child {
   border-right: 0;
 }
-/* line 988, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 989, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows .calendar .date:hover {
   background: rgba(255, 255, 255, 0.1);
 }
-/* line 994, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 995, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows table#tour {
   color: #fff;
   width: 80%;
@@ -960,35 +961,35 @@ border-top: 4px solid #fff;*/
   border-bottom: 4px solid #fff;
   text-align: left;
 }
-/* line 1004, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1005, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows table#tour thead th {
   border-bottom: 1px solid rgba(255, 255, 255, 0.045);
   padding-top: 15px;
   padding-bottom: 15px;
 }
-/* line 1011, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1012, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows table#tour tr {
   background: rgba(255, 255, 255, 0.05);
 }
-/* line 1014, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1015, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows table#tour tr td {
   border-color: rgba(255, 255, 255, 0.045);
 }
-/* line 1019, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1020, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows table#tour tr:nth-child(2n) {
   background: rgba(255, 255, 255, 0.075);
 }
-/* line 1023, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1024, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows table#tour tr:hover {
   background: rgba(255, 255, 255, 0.15);
 }
-/* line 1026, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1027, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #shows table#tour tr:hover td {
   border-color: rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* line 1034, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1035, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #about {
   overflow: hidden;
   z-index: 5;
@@ -997,7 +998,7 @@ border-top: 4px solid #fff;*/
   background-size: cover;
   background-position: center;
 }
-/* line 1042, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1043, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #about h2 {
   display: block;
   text-align: left;
@@ -1010,20 +1011,20 @@ border-top: 4px solid #fff;*/
   padding: 1em 0;
   margin-bottom: 0;
 }
-/* line 1055, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1056, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #about .instagram-img {
   width: 100%;
 }
-/* line 1063, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1064, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #about iframe.instagram-pics .media-grid li a {
   opacity: 1;
 }
-/* line 1067, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1068, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #about iframe.instagram-pics .media-grid li a:hover {
   opacity: .5;
 }
 
-/* line 1074, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1075, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 footer {
   position: relative;
   z-index: 15;
@@ -1031,7 +1032,7 @@ footer {
   padding-bottom: 200px;
 }
 
-/* line 1081, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1082, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer {
   height: 64px;
   border-top: 2px solid rgba(255, 255, 255, 0.2);
@@ -1039,11 +1040,11 @@ footer {
   padding-top: 10px;
   font-family: 'Open Sans',sans-serif;
 }
-/* line 1088, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1089, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer h4 {
   color: #fff;
 }
-/* line 1092, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1093, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer input {
   line-height: 40px;
   height: 40px;
@@ -1053,7 +1054,7 @@ footer {
   padding: 0 1em;
   border: 0;
 }
-/* line 1102, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1103, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .submit {
   display: block;
   float: left;
@@ -1067,7 +1068,7 @@ footer {
   color: #fff;
   cursor: pointer;
 }
-/* line 1115, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1116, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .submit p {
   line-height: 40px;
   color: #aaa;
@@ -1075,7 +1076,7 @@ footer {
   font-weight: 300;
   font-size: 18px;
 }
-/* line 1124, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1125, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .copyright {
   text-align: right;
   color: #aaa;
@@ -1084,7 +1085,7 @@ footer {
   font-weight: 300;
   padding-right: 40px;
 }
-/* line 1133, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1134, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .brand {
   text-align: right;
   padding-right: 0;
@@ -1094,11 +1095,11 @@ footer {
 
 /*  /////////////  VERSION 2 //////////// */
 /*  ///////////////////////////////////// */
-/* line 1145, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1146, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links {
   text-align: center;
 }
-/* line 1148, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1149, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link {
   text-decoration: none;
   font-family: 'Bangers';
@@ -1106,11 +1107,11 @@ footer {
   font-size: 34px;
   margin: 0 40px;
 }
-/* line 1155, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1156, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link span {
   color: #FFA300;
 }
-/* line 1159, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1160, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link .fuse {
   height: 5px;
   width: 100px;
@@ -1121,7 +1122,7 @@ footer {
   z-index: 5;
   position: relative;
 }
-/* line 1170, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1171, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link .spark-flicker {
   visibility: hidden;
   position: relative;
@@ -1129,17 +1130,17 @@ footer {
   top: -2px;
   margin-left: -58px;
 }
-/* line 1180, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1181, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link:hover .spark-flicker {
   visibility: visible;
 }
-/* line 1184, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1185, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link:hover .fuse {
   visibility: visible;
 }
 
 @media (max-width: 1200px) {
-  /* line 1192, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+  /* line 1193, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
   body {
     font-size: 3em !important;
   }
