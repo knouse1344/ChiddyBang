@@ -65,7 +65,7 @@ border-top: 4px solid #fff;*/
 .nav-bottom .nav-container {
   display: inline-block;
   width: 100%;
-  height: 5em;
+  height: 50px;
   background: rgba(0, 0, 0, 0.65);
   text-align: center;
   position: relative;
