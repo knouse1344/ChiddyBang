@@ -48,11 +48,16 @@
 
 .crown {
 	position: fixed;
+	top: -50px;
 	left: 50%;
 	margin-left: -25px;
 	margin-top: .5em;
 	padding: 0 0 0 0;
 	z-index: 100;
+	-webkit-transition: all .15s;
+    -moz-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s;
 }
 
 .bang-logo {

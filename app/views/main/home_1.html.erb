@@ -1,6 +1,6 @@
 <div id="index" class="section">
-	<div class="nav-fixed-top"><!-- 
-		<a class="crown" href="#index"><img width="50" src="/assets/crown.png" /></a>		 -->
+	<div class="nav-fixed-top">
+		<a class="crown" href="#index"><img width="50" src="/assets/crown.png" /></a>		
 		<a class="bang-logo" href="#index"><img width="150" src="/assets/chiddy_BANG_03.png" /></a>
 	</div>
 	<div class="nav-bottom">
@@ -430,6 +430,7 @@
 		var about = ("#about");
 		var navabout = (".nav-about");
 		var navli = ("#index .nav-container .slide-in ul li");
+		var crown = (".crown");
 		var thumb = (".instagram-pics");
 
 		var fbicon = (".fbicon");
@@ -492,8 +493,10 @@
 		$(navi).waypoint(function(direction) {
 			if (direction == 'down') {
 		  		$(this).addClass('nav-fixed');
+		  		$(crown).attr("style", "top: 0;");
 		  	} else {
 		  		$(this).removeClass('nav-fixed');
+		  		$(crown).attr("style", "top: -50px;");
 		  	}
 		});
 
