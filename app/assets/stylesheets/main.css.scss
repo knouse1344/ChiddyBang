@@ -457,12 +457,11 @@
 		    transition: all .5s;
 		}
 
-		.play-button {
+		.player-interface {
 			width: 300px;
 			height: 300px;
 			margin: auto;
 			margin: 100px auto 0 auto;
-			background: rgba(0,0,0,.75);
 			border-radius: 150px;
 			position: relative;
 			z-index: 10;
@@ -472,12 +471,20 @@
 		    -o-transition: all ease-in-out .15s;
 		    transition: all ease-in-out .15s;
 
+		    .player-buttons {
+				width: 300px;
+				height: 300px;
+				position: relative;
+				z-index: 5;
+				border-radius: 150px;
+		    }
+
 		    .spinner {
 		    	position: absolute;
-		    	top:-60px;
-		    	left: -60px;
-		    	width: 420px;
-		    	height: 420px;
+		    	top:-40px;
+		    	left: -40px;
+		    	width: 380px;
+		    	height: 380px;
 		    	z-index: 2;
 		    }
 
@@ -553,8 +560,9 @@
 				h5 {
 					margin: 0;
 					color: #fff;
+					font-family: 'Raleway', sans-serif;
 					font-weight: 300;
-					font-size: .9em;
+					font-size: 1em;
 					padding-left: 1em;
 					text-transform: uppercase;
 					letter-spacing: 2px;

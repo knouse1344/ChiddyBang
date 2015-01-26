@@ -281,11 +281,13 @@
 					<div class="music-player-bg"></div>
 					<div class="row">
 						<div class="col-sm-7">
-							<div class="play-button">
+							<div class="player-interface">
 								<img class="spinner" src="/assets/spinner.png" />
-								<i class="fa fa-fast-backward"></i>
-								<i class="fa fa-play"></i>
-								<i class="fa fa-fast-forward"></i>
+								<div class="player-buttons">
+									<i class="fa fa-fast-backward"></i>
+									<i class="fa fa-play"></i>
+									<i class="fa fa-fast-forward"></i>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -699,6 +701,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 		$(nowuknow_btn).on("click", function () {
@@ -722,6 +726,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 		$(kids_btn).on("click", function () {
@@ -744,6 +750,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 		$(heylondon_btn).on("click", function () {
@@ -766,6 +774,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 		$(allthingsgo_btn).on("click", function () {
@@ -788,6 +798,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 		$(underthesheets_btn).on("click", function () {
@@ -810,6 +822,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 		$(mindyourmanners_btn).on("click", function () {
@@ -832,6 +846,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 		$(toofake_btn).on("click", function () {
@@ -854,6 +870,8 @@
 				track.play();
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
+		  		clearInterval(spinInterval);
+				rotate('0', true);
 			});
 		});
 
@@ -867,15 +885,18 @@
 			musicposition = musicposition.toFixed(2);
 			percent = (musicposition/musicduration)*100;
 			percent = percent.toFixed(2);
-			progressbar(percent);
 
 			if (playmemory == 0) {
 		  			track.play();
+		  			progressbar(percent, true);
 		  			playmemory = 1;
+		  			$('.playing-gif').css("opacity", "1");
 			} else { 
 		  			track.pause();
 		  			playmemory = 0;
-		  			$('.playing-gif').remove();
+		  			progressbar(percent, false);
+		  			clearInterval(spinInterval);
+		  			$('.playing-gif').css("opacity", "0");
 			}
 			
 
@@ -889,66 +910,47 @@
 		});
 
 		var spinner = $('.spinner');
-		
+		var degrees = 0;
+		var spinInterval;
 
-		function progressbar(percent) {
+		function rotate(percy, conty) {
+			
+			if (conty == false) {
+				$(spinner).attr("style", "-webkit-transform: rotate("+ percy +"deg); -moz-transform: rotate("+ percy +"deg); -ms-transform: rotate("+ percy +"deg); transform: rotate("+ percy +"deg);");
+				clearInterval(spinInterval);
+			} else {
+				spinInterval = setInterval(function () {
+					musicduration = track.durationEstimate;
+					musicduration = musicduration.toFixed(2);
+					musicposition = track.position;
+					musicposition = musicposition.toFixed(2);
+					percent = (musicposition/musicduration)*100;
+					percent = percent.toFixed(2);
+					percent = parseFloat(percent);
+					//percent += 0.21;
 
-				var degrees = 0;
+					percent = percent*3.5;
+					console.log(percent);
+					console.log(conty);
 
-				degrees = parseFloat(degrees);
-
-				percent = parseFloat(percent);
-				//percent += 0.21;
-
-				percent = percent*3.5;
-				console.log(percent);
-
-				spin(percent);
-
-				function spin(degree) {
-					$(spinner).css({'-webkit-transform' : 'rotate('+ degree +'deg)',
-	                 '-moz-transform' : 'rotate('+ degree +'deg)',
-	                 '-ms-transform' : 'rotate('+ degree +'deg)',
-	                 'transform' : 'rotate('+ degree +'deg)'});
+					$(spinner).removeAttr("style");
+					$(spinner).attr("style", "-webkit-transform: rotate("+ percent +"deg); -moz-transform: rotate("+ percent +"deg); -ms-transform: rotate("+ percent +"deg); transform: rotate("+ percent +"deg);");
+				}, 300);
 			}
 		}
+		
 
+		function progressbar(percent, continuespin) {
 
-		function rotateshows() {
-			// var stylusrotate = 90;
+			degrees = parseFloat(degrees);
+			percent = parseFloat(percent);
+			//percent += 0.21;
 
-			// function rotatestylus() {
-			// 	stylusrotate -= 0.15;
-			// 	$(stylus).css({'-webkit-transform' : 'rotate('+ stylusrotate +'deg)',
-			//                  '-moz-transform' : 'rotate('+ stylusrotate +'deg)',
-			//                  '-ms-transform' : 'rotate('+ stylusrotate +'deg)',
-			//                  'transform' : 'rotate('+ stylusrotate +'deg)'});
-			// }
+			percent = percent*3.5;
+			console.log(percent);
+			console.log(continuespin);
 
-			// function rotatevinyl() {
-			// 	setInterval(function() {
-			// 		rotation +=.1;
-			// 		$(vinyl).css({'-webkit-transform' : 'rotate('+ rotation +'deg)',
-		 //                 '-moz-transform' : 'rotate('+ rotation +'deg)',
-		 //                 '-ms-transform' : 'rotate('+ rotation +'deg)',
-		 //                 'transform' : 'rotate('+ rotation +'deg)'});
-			// 	}, 10);
-			// }
-
-			// var refreshInterval = setInterval(rotatestylus, 10);
-			// setInterval(function() {
-			// 	clearInterval(refreshInterval);
-			// 	rotatevinyl();
-			// }, 3000);
-
-
-
-			// setTimeout(function() {
-			// 	$(vinyl).css({'-webkit-transform' : 'rotate('+ rotation +'deg)',
-		 //                 '-moz-transform' : 'rotate('+ rotation +'deg)',
-		 //                 '-ms-transform' : 'rotate('+ rotation +'deg)',
-		 //                 'transform' : 'rotate('+ rotation +'deg)'});
-			// }, 4000);
+			rotate(percent, continuespin);
 		}
 	});
 </script>
