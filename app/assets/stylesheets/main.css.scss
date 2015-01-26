@@ -78,19 +78,6 @@
 		text-align: center;
 		position: relative;
 
-		.logo {
-			width: 150px;
-			height: 50px;
-			background: url('/assets/chiddy_BANG_03.png') no-repeat;
-			background-size: contain;
-			background-position: center;
-			position: absolute;
-			left: 1.5em;
-			display: inline-block;
-			margin: 0;
-			line-height: 50px;
-		}
-
 		h1 {
 			position: absolute;
 			left: 1.5em;
@@ -816,7 +803,7 @@
 			    	font-size: .9em;
 			    	padding-bottom: 1em;
 			    	margin-bottom: 2em;
-					border-bottom: 2px solid rgba(255,255,255,.2);
+					border-bottom: 2px solid #8560a8;
 			    	-webkit-transition: all ease-in-out .25s;
 				    -moz-transition: all ease-in-out .25s;
 				    -o-transition: all ease-in-out .25s;
