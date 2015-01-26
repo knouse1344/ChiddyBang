@@ -284,6 +284,7 @@
 							<div class="player-interface">
 								<img class="spinner" src="/assets/spinner.png" />
 								<div class="player-buttons">
+									<div class="player-buttons-material"><div class="ping"></div></div>
 									<i class="fa fa-fast-backward"></i>
 									<i class="fa fa-play"></i>
 									<i class="fa fa-fast-forward"></i>
@@ -867,7 +868,14 @@
 				track = toofake;
 				album_name.empty().append('Single');
 				music_player_bg.attr("style", "background: url('/assets/swellyxpress.jpg') no-repeat; background-size: cover; background-position: center;");
-				track.play();
+				track.play({
+					onfinish: function() {
+					    playmemory = 0;
+						$('.playing-gif').attr("style", "height: 0;");
+						$('.fa-pause').toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
+						clearInterval(spinInterval);
+					}
+				});
 				$(playbutton).toggleClass('fa-pause').toggleClass('fa-play').toggleClass('playing');
 				playmemory=1;
 		  		clearInterval(spinInterval);
@@ -876,9 +884,17 @@
 		});
 
 
+		var pinger = ('.ping');
 
 		$(playbutton).on("click", function () {
 
+			$(pinger).attr("style", "width: 300px; height: 300px; opacity: 0;");
+			setTimeout(function() {
+				$(pinger).attr("style", "width: 0px; height: 0px; opacity: 0;")
+			}, 300)
+			setTimeout(function() {
+				$(pinger).attr("style", "width: 0px; height: 0px; opacity: 1;")
+			}, 500)
 			musicduration = track.durationEstimate;
 			musicduration = musicduration.toFixed(2);
 			musicposition = track.position;
@@ -929,7 +945,7 @@
 					percent = parseFloat(percent);
 					//percent += 0.21;
 
-					percent = percent*3.5;
+					percent = percent*3.6;
 					console.log(percent);
 					console.log(conty);
 
@@ -944,12 +960,7 @@
 
 			degrees = parseFloat(degrees);
 			percent = parseFloat(percent);
-			//percent += 0.21;
-
-			percent = percent*3.5;
-			console.log(percent);
-			console.log(continuespin);
-
+			percent = percent*3.6;
 			rotate(percent, continuespin);
 		}
 	});

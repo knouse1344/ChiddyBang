@@ -488,6 +488,34 @@
 		    	z-index: 2;
 		    }
 
+		    .player-buttons-material {
+		    	position: absolute;
+		    	line-height: 300px;
+		    	margin: auto;
+		    	vertical-align: middle;
+		    	top: 0;
+		    	left: 0;
+		    	width: 300px;
+		    	height: 300px;
+		    	border-radius: 150px;
+
+			    .ping {
+			    	width: 0px;
+			    	height: 00px;
+			    	margin: auto;
+			    	display: inline-block;
+			    	vertical-align: middle;
+			    	border-radius: 150px;
+			    	opacity: 1;
+		    		background: rgba(255,255,255,.25);
+		    		-webkit-transition: all .33s;
+				    -moz-transition: all .33s;
+				    -o-transition: all .33s;
+				    transition: all .33s;
+
+			    }
+		    }
+
 		    i {
 		    	line-height: 300px;
 		    	vertical-align: middle;
@@ -550,7 +578,6 @@
 				cursor: pointer;
 				text-align: left;
 				position: relative;
-				box-shadow: 2px 2px 5px rgba(0,0,0,.4);
 				border-bottom: 4px solid rgba(133,96,168,.35);
 				-webkit-transition: all .15s;
 			    -moz-transition: all .15s;
