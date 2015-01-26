@@ -677,38 +677,39 @@
 		z-index: 5;
 		position: relative;
 
-		.post-date {
-			color: #aaa;
-			margin: 0;
-			font-weight: 300;
-			letter-spacing: 1px;
-			font-size: .8em;
-		}
-
 		h3 {
 			display: block;
-			font-weight: 600;
+			font-weight: 500;
 			text-transform: uppercase;
-			font-size: 1.65em;
+			font-size: 1.4em;
+			line-height: 1.4em;
+			font-family: 'Raleway', sans-serif;
 			letter-spacing: 2px;
-			padding: 0;
+			white-space: normal;
+			padding: 0 0 .5em 0;
 			margin-bottom: 0;
 			margin-top: .5em;
 			color: #fff;
-		}
-
-		.news-row {
-			padding-top: 3em;
-			padding-bottom: 3em;
+			border-bottom: 1px dotted rgba(255,255,255,.25);
 		}
 
 		.news-box {
-			border-bottom: 2px solid rgba(150,150,150,.15);
+			padding-top: 2em;
+			padding-bottom: 8em;
+			border-top: 2px solid #8560a8;
 
 			.news-title {
 				text-align: left;
-				padding: 1em 0;
-				border-top: 2px solid #8560a8;
+				margin-bottom: 1em;
+
+				.post-date {
+					color: #aaa;
+					margin: 0;
+					font-weight: 300;
+					letter-spacing: 1px;
+					font-size: .8em;
+					padding-bottom: 0;
+				}
 
 				h2 {
 					text-align: left;
@@ -716,14 +717,25 @@
 
 			}
 
+			.news-img {
+				padding: 0;
+
+				img {
+					width: 100%;
+				}
+			}
+
 			.news-content {
 				text-align: left;
 
 				p {
-					padding: 0 0 2em 0;
 					color: #aaa;
 					font-size: 1.1em;
 					line-height: 1.6em;
+					font-weight: 300;
+					font-size: 1em;
+					line-height: 1.6em;
+					font-family: 'Raleway', sans-serif;
 					white-space: normal;
 				}
 			}
@@ -867,50 +879,16 @@
 
 	.shows-bg {
 		top: 0;
-		left: -25%;
+		left: 0;
+		position: absolute;
 		opacity: 1;
-		width: auto;
-		background: url('/assets/home_image_v2.5.png');
-		background-attachment: fixed;
-		background-position: center;
-		background-size: cover;
-		height: 100%;
-	}
-
-/*	.shows-bg::after {
-		content: "";
 		width: 100%;
 		height: 100%;
-		position: absolute;
-		top:0;
-		left:0;
-		opacity: .2;
-		background-image: url('/assets/home_image_v2.png');
+		background: url('/assets/home_image_v2.5.png') no-repeat;
+		background-position: static;
 		background-size: cover;
 		background-attachment: fixed;
-		background-position: 75% 0;
-		z-index: 1;
-	}*/
-
-	.vinyl {
-		position: fixed;
-		width: 700px;
-		top: 100px;
-		right: -150px;
-		z-index: -4;
-	}
-
-	.vinyl-stylus {
-		position: fixed;
-		width: 600px;
-		display: block;
-		top: -200px;
-		right: 200px;
-		z-index: -3;
-		opacity: .25;
-		-ms-transform: rotate(50deg); /* IE 9 */
-    	-webkit-transform: rotate(50deg); /* Chrome, Safari, Opera */
-   		transform: rotate(50deg);
+		z-index: -1;
 	}
 
 	.calendar {
