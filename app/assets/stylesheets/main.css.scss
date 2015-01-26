@@ -55,6 +55,15 @@
 	z-index: 100;
 }
 
+.bang-logo {
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	margin-top: 2em;
+	padding: 0 0 0 0;
+	z-index: 100;
+}
+
 .nav-bottom {
 	width: 100%;
 	position: absolute;
@@ -68,6 +77,19 @@
 		background: rgba(0,0,0,.65);
 		text-align: center;
 		position: relative;
+
+		.logo {
+			width: 150px;
+			height: 50px;
+			background: url('/assets/chiddy_BANG_03.png') no-repeat;
+			background-size: contain;
+			background-position: center;
+			position: absolute;
+			left: 1.5em;
+			display: inline-block;
+			margin: 0;
+			line-height: 50px;
+		}
 
 		h1 {
 			position: absolute;
@@ -330,12 +352,12 @@
 
 	.home-img {
 		position: absolute;
-		top:0;
+		top:10%;
 		left:0;
 		height:100%;
-		width: 100%;
+		width: 105%;
 		z-index: 1;
-		background-image: url('/assets/home_bg.jpg');
+		background-image: url('/assets/home_image_v3.jpg');
 		background-size: cover;
 		background-position: center;
 	}
@@ -573,12 +595,12 @@
 				display: block;
 				width: 100%;
 				height: 50px;
-				margin: 0 0 1em 0;
+				margin: 0 0 1.25em 0;
 				text-decoration: none;
 				cursor: pointer;
 				text-align: left;
 				position: relative;
-				border-bottom: 4px solid rgba(133,96,168,.35);
+				border-bottom: 2px solid rgba(133,96,168,.35);
 				-webkit-transition: all .15s;
 			    -moz-transition: all .15s;
 			    -o-transition: all .15s;
@@ -596,6 +618,16 @@
 					line-height: 50px;
 					position: relative;
 					z-index: 5;
+				
+					.time {
+						padding: 0 1em;
+						margin-top: 9px;
+						height: 30px;
+						width: 70px;
+						line-height: 30px;
+						float: right;
+						border-left: 2px solid rgba(255,255,255,.15);
+					}
 				}
 
 				.playing-gif {
@@ -881,13 +913,12 @@
 		top: 0;
 		left: 0;
 		position: absolute;
-		opacity: 1;
+		opacity: .75;
 		width: 100%;
 		height: 100%;
 		background: url('/assets/home_image_v2.5.png') no-repeat;
 		background-position: static;
 		background-size: cover;
-		background-attachment: fixed;
 		z-index: -1;
 	}
 
