@@ -50,8 +50,8 @@
 	position: fixed;
 	top: -50px;
 	left: 50%;
-	margin-left: -25px;
-	margin-top: .5em;
+	margin-left: -35px;
+	margin-top: 4px;
 	padding: 0 0 0 0;
 	z-index: 100;
 	-webkit-transition: all .15s;
@@ -63,8 +63,8 @@
 .bang-logo {
 	position: absolute;
 	left: 50%;
-	margin-left: -75px;
-	margin-top: 6em;
+	margin-left: -150px;
+	margin-top: 0em;
 	padding: 0 0 0 0;
 	z-index: 100;
 }
@@ -908,7 +908,7 @@
 		top: 0em;
 		width: 1200px;
 		height: 1200px;
-		opacity: .25;
+		opacity: .1;
 		left: 0;
 		z-index: 0;
 	}
@@ -926,10 +926,10 @@
 	.news-smoke {
 		position: absolute;
 		top: 500px;
-		width: 800px;
-		height: 800px;
-		opacity: 1;
-		left: 0;
+		width: 1000px;
+		height: 1000px;
+		opacity: .5;
+		left: 250px;
 		z-index: 0;
 	}
 
