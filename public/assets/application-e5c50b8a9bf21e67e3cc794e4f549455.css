@@ -402,7 +402,7 @@ border-top: 4px solid #fff;*/
 /* line 424, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .music-bg-grad-2 {
   position: absolute;
-  top: 15em;
+  top: 0;
   left: 0;
   width: 100%;
   opacity: .7;
