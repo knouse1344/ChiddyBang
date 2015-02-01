@@ -1315,13 +1315,6 @@ footer {
 #links .nav-link:hover .fuse {
   visibility: visible;
 }
-
-@media (max-width: 1200px) {
-  /* line 1361, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
-  body {
-    font-size: 3em !important;
-  }
-}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
