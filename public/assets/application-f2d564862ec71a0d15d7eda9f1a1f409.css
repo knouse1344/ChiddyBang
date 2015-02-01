@@ -1062,9 +1062,9 @@ border-top: 4px solid #fff;*/
   overflow: hidden;
   z-index: 5;
   position: relative;
-  background: url("/assets/graffiti_bg.jpg") no-repeat;
+  /* background: url('/assets/graffiti_bg.jpg') no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 /* line 1102, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #about h2 {
@@ -1160,8 +1160,48 @@ border-top: 4px solid #fff;*/
 #about iframe.instagram-pics .media-grid li a:hover {
   opacity: .5;
 }
+/* line 1206, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+#about .star {
+  position: absolute;
+  z-index: -1;
+}
+/* line 1211, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+#about .star-1 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  z-index: -1;
+}
+/* line 1217, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+#about .star-2 {
+  position: absolute;
+  top: 500px;
+  left: 150px;
+  z-index: -1;
+}
+/* line 1223, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+#about .star-3 {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+  z-index: -1;
+}
+/* line 1229, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+#about .star-4 {
+  position: absolute;
+  top: 75px;
+  left: 800px;
+  z-index: -1;
+}
+/* line 1235, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+#about .star-5 {
+  position: absolute;
+  top: 600px;
+  left: 800px;
+  z-index: -1;
+}
 
-/* line 1207, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1243, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 footer {
   position: relative;
   z-index: 15;
@@ -1169,18 +1209,18 @@ footer {
   padding-bottom: 200px;
 }
 
-/* line 1214, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1250, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer {
   height: 64px;
   border-top: 2px solid #8560a8;
   padding-top: 1.3em;
   font-family: 'Open Sans',sans-serif;
 }
-/* line 1220, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1256, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer h4 {
   color: #fff;
 }
-/* line 1224, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1260, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer input {
   line-height: 40px;
   height: 40px;
@@ -1190,7 +1230,7 @@ footer {
   padding: 0 1em;
   border: 0;
 }
-/* line 1234, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1270, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .submit {
   display: block;
   float: left;
@@ -1204,7 +1244,7 @@ footer {
   color: #fff;
   cursor: pointer;
 }
-/* line 1247, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1283, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .submit p {
   line-height: 40px;
   color: #aaa;
@@ -1212,16 +1252,17 @@ footer {
   font-weight: 300;
   font-size: 18px;
 }
-/* line 1256, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1292, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .copyright {
   text-align: right;
   color: #aaa;
   font-size: .8em;
   line-height: 20px;
   font-weight: 300;
-  padding-right: 40px;
+  margin-right: -15px;
+  padding-right: 0px;
 }
-/* line 1265, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1302, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 .footer .brand {
   text-align: right;
   padding-right: 0;
@@ -1231,11 +1272,11 @@ footer {
 
 /*  /////////////  VERSION 2 //////////// */
 /*  ///////////////////////////////////// */
-/* line 1277, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1314, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links {
   text-align: center;
 }
-/* line 1280, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1317, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link {
   text-decoration: none;
   font-family: 'Bangers';
@@ -1243,11 +1284,11 @@ footer {
   font-size: 34px;
   margin: 0 40px;
 }
-/* line 1287, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1324, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link span {
   color: #FFA300;
 }
-/* line 1291, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1328, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link .fuse {
   height: 5px;
   width: 100px;
@@ -1258,7 +1299,7 @@ footer {
   z-index: 5;
   position: relative;
 }
-/* line 1302, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1339, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link .spark-flicker {
   visibility: hidden;
   position: relative;
@@ -1266,17 +1307,17 @@ footer {
   top: -2px;
   margin-left: -58px;
 }
-/* line 1312, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1349, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link:hover .spark-flicker {
   visibility: visible;
 }
-/* line 1316, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+/* line 1353, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
 #links .nav-link:hover .fuse {
   visibility: visible;
 }
 
 @media (max-width: 1200px) {
-  /* line 1324, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
+  /* line 1361, /Users/Bryan/Desktop/projects/chiddybang/app/assets/stylesheets/main.css.scss */
   body {
     font-size: 3em !important;
   }

@@ -587,6 +587,23 @@
 		// 	theme:"light-3",
 		// 	scrollInertia: 150
 		// });
+		
+		function randomstars() {
+			var ix = 0;
+
+			while (ix < 25) {
+				var thix = Math.floor(Math.random() * 100) + 1;
+				var thiy = Math.floor(Math.random() * 100) + 1;
+				var opac = (Math.random() * 1) + 0;
+				var ratio = (Math.random() * 2) + 0.5;
+				console.log(thix, thiy, opac)
+				$(about).append('<img data-stellar-ratio="'+ratio+'" style="opacity:'+ opac +'; top:'+ thiy +'%; left:'+ thix +'%;" class="star" src="/assets/star.png" />');
+				ix++;
+			}
+		}
+
+		randomstars();
+
 
 		var pics = ('#pics');
 
